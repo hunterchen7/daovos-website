@@ -14,17 +14,19 @@ const Header = (): JSX.Element => {
   };
 
   return (
-    <header className="flex flex-row self-center items-center justify-between py-2 gap-4 sticky top-0 bg-white border-b-2 border-black">
-      <h1 className="font-extrabold text-5xl">DAOVOS</h1>
-      <div className="flex flex-row self-center justify-center font-nunito">
-        <HeaderButton to="daovos" text="Daovos"/>
+    <header className="flex flex-row self-center items-center justify-between py-2 md:gap-4 sticky top-0 bg-white border-b-2 border-black w-[96.5vw]">
+      <h1 className="font-extrabold text-4xl lg:text-5xl">DAOVOS</h1>
+      <div className="hidden lg:flex flex-row self-center justify-center font-nunito">
+        <HeaderButton to="daovos" text="DAOVOS"/>
         <HeaderButton to="our-plan" text="Our Plan"/>
         <HeaderButton to="agenda" text="Agenda"/>
         <HeaderButton to="philosopy" text="Philosophy"/>
         <HeaderButton to="tickets" text="Tickets"/>
         <HeaderButton to="team" text="Team"/>        
       </div>
-      <BookYourSpot />
+      <div className="hidden lg:flex">
+        <BookYourSpot />
+      </div>
     </header>
   );
 };

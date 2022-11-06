@@ -6,9 +6,9 @@ import telegram from '../public/telegram.svg';
 
 const Daovos = (): JSX.Element => {
   return (
-    <div className="flex justify-around w-full h-screen border-b-2 border-black" id="daovos">
+    <div className="flex flex-col md:flex-row justify-around w-full h-screen border-b-2 border-black" id="daovos">
       <Image src={daovos_icon} alt="daovos_icon" />
-      <div className="flex flex-col gap-3 justify-center">
+      <div className="-mt-32 lg:mt-0 flex flex-col gap-3 justify-center">
         <h1 className="font-semibold text-8xl">
           DAOVOS
         </h1>
