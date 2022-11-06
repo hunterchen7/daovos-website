@@ -10,7 +10,7 @@ const Tickets = (): JSX.Element => {
           $ {price}
         </div>
         <div className="w-[120px] md:w-[150px] flex flex-col justify-center">
-          <div className="my-3 h-[110px] md:h-[160px] border-y border-black flex flex-col justify-center">
+          <div className="my-3 h-[110px] md:h-[160px] border-y border-black flex flex-col justify-center text-xl md:text-2xl font-semibold">
             {title}
           </div>
         </div>
@@ -25,11 +25,10 @@ const Tickets = (): JSX.Element => {
   }
 
   return (
-    <div className="w-[97vw] -mt-20 lg:-mt-64" id="tickets">
-      <div className="flex justify-end">
+    <div className="w-[97vw] -mt-20 lg:-mt-64 pb-8 mb-8 md:pb-16 md:mb-16 border-b-2 border-black">
+      <div className="flex justify-end" id="tickets" >
         <Image src="/ticket.svg" alt="TICKETS" width={1200} height={300}/>
       </div>
-
       <div className="flex flex-col justify-around gap-8 items-center">
         <div className="text-2xl font-semibold mt-8 md:mt-0">
           Select the ticket that best suits your needs
@@ -42,8 +41,6 @@ const Tickets = (): JSX.Element => {
           <Ticket title="Sponsor" price="500"/>
         </div>             
       </div>
-   
-
     </div>
   );
 }

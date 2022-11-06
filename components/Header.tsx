@@ -29,21 +29,21 @@ const Header = (): JSX.Element => {
       </div>
       <div className="hidden lg:flex flex-row self-center justify-center font-nunito">
         <HeaderButton to="daovos" text="DAOVOS"/>
-        <HeaderButton to="our-plan" text="Our Plan"/>
         <HeaderButton to="agenda" text="Agenda"/>
-        <HeaderButton to="philosopy" text="Philosophy"/>
+        {/*<HeaderButton to="event" text="Event"/>*/}
         <HeaderButton to="tickets" text="Tickets"/>
-        <HeaderButton to="team" text="Team"/>        
+        <HeaderButton to="team" text="Team"/>    
+        <HeaderButton to="philosophy" text="Philosophy"/>
       </div>
       <div
         className={`z-2 text-right gap-4 py-4 px-8 absolute top-20 right-2 flex flex-col text-md font-medium bg-background-secondary backdrop-blur-lg border-2 border-dark-elevation rounded-3xl ${menuDropped ? 'lg:hidden' : 'hidden'}`}
       >
         <HeaderButton to="daovos" text="DAOVOS"/>
-        <HeaderButton to="our-plan" text="Our Plan"/>
         <HeaderButton to="agenda" text="Agenda"/>
-        <HeaderButton to="philosopy" text="Philosophy"/>
+        {/*<HeaderButton to="event" text="Event"/>*/}
         <HeaderButton to="tickets" text="Tickets"/>
-        <HeaderButton to="team" text="Team"/>      
+        <HeaderButton to="team" text="Team"/>
+        <HeaderButton to="philosophy" text="Philosophy"/>
       </div>
       <div className="hidden lg:flex">
         <BookYourSpot />

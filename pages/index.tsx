@@ -5,9 +5,10 @@ import styles from '../styles/Home.module.css'
 import Header from '../components/Header';
 import Daovos from '../components/Daovos';
 import Daovos2 from '../components/Daovos2';
-import OurPlan from '../components/OurPlan';
 import Agenda from '../components/Agenda';
 import Tickets from '../components/Tickets';
+import Team from '../components/Team';
+import Philosophy from '../components/Philosophy';
 
 export default function Home() {
   return (
@@ -22,10 +23,11 @@ export default function Home() {
       <div className="flex justify-center text-5xl font-bold py-6">
         OUR SUPPORTERS | DAO SUISSE | ARAMID |
       </div>
-      <Daovos2 />        
-      <OurPlan />
+      <Daovos2 />
       <Agenda />
       <Tickets />
+      <Team />
+      <Philosophy />
     </div>
   )
 }
