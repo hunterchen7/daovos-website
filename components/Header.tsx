@@ -12,12 +12,12 @@ import {
   ConnectWallet,
 } from '@thirdweb-dev/react';
 
-import {
-  chainId,
-  ClaimConditionInputArray,
-  SignatureDrop,
-  SignedPayload721WithQuantitySignature,
-} from '@thirdweb-dev/sdk';
+// import {
+//   ChainId,
+//   ClaimConditionInputArray,
+//   SignatureDrop,
+//   SignedPayload721WithQuantitySignature,
+// } from '@thirdweb-dev/sdk';
 
 const Header = (): JSX.Element => {
   const [menuDropped, setMenuDropped] = useState(false);

@@ -11,7 +11,7 @@ import {
 } from '@thirdweb-dev/react';
 
 import {
-  chainId,
+  ChainId,
   ClaimConditionInputArray,
   SignatureDrop,
   SignedPayload721WithQuantitySignature,
@@ -64,7 +64,7 @@ const Tickets = (): JSX.Element => {
     'nft-drop'
   );
 
-  async function claim(nftPrice: Number) {
+  async function claim(nftPrice: any) {
     console.log(JSON.stringify(nftPrice));
     if (!address) {
       connectWithMetamask();
@@ -72,7 +72,7 @@ const Tickets = (): JSX.Element => {
     }
 
     if (isMismatch) {
-      switchNetwork?.(chainId.Goerli);
+      switchNetwork?.(ChainId.Goerli);
       return;
     }
     try {
