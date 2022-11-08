@@ -1,7 +1,7 @@
 import React from 'react';
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Head from 'next/head';
+import Image from 'next/image';
+import styles from '../styles/Home.module.css';
 import Header from '../components/Header';
 import Daovos from '../components/Daovos';
 import Daovos2 from '../components/Daovos2';
@@ -18,7 +18,7 @@ export default function Home() {
         <meta name="description" content="DAOVOS web page" />
         <link rel="icon" href="/daovos_icon.svg" />
       </Head>
-      <Header/>
+      <Header />
       <Daovos />
       <div className="flex justify-center text-5xl font-bold py-6">
         OUR SUPPORTERS | DAO SUISSE | ARAMID |
@@ -29,5 +29,5 @@ export default function Home() {
       <Team />
       <Philosophy />
     </div>
-  )
+  );
 }
