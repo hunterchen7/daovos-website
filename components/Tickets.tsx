@@ -21,15 +21,15 @@ const Tickets = (): JSX.Element => {
   const Ticket = (props: any): JSX.Element => {
     const { title, price } = props;
     return (
-      <div className="flex justify-center self-center text-center hover:cursor-pointer">
+      <div
+        onClick={() => claim({ price })}
+        className="flex justify-center self-center text-center hover:cursor-pointer"
+      >
         <div className="w-[90px] h-[130px] md:w-[120px] md:h-[180px] bg-[#E2FF8A] text-2xl md:text-3xl lg:text-4xl font-semibold flex flex-col justify-center text-center border border-black">
           $ {price}
         </div>
         <div className="w-[120px] md:w-[150px] flex flex-col justify-center">
-          <div
-            onClick={() => claim({ price })}
-            className="my-3 h-[110px] md:h-[160px] border-y border-black flex flex-col justify-center text-xl md:text-2xl font-semibold"
-          >
+          <div className="my-3 h-[110px] md:h-[160px] border-y border-black flex flex-col justify-center text-xl md:text-2xl font-semibold">
             {title}
           </div>
         </div>
