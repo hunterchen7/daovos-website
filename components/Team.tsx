@@ -1,6 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import isla from "../public/team_members/isla.png";
+import isla from "../public/team_members/isla.jpeg";
+import estefania from "../public/team_members/estefania.png";
+import mara from "../public/team_members/mara.jpeg";
+import esteve from "../public/team_members/esteve.jpeg";
+import victoria from "../public/team_members/victoria.jpeg";
+import daniel from "../public/team_members/daniel.png";
+import anon from "../public/team_members/anon-avatar.png";
 
 const shimmer = (w: number, h: number) => 
 `<svg width="${w}" height="${h}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -66,7 +72,7 @@ const Team = (): JSX.Element => {
         <TeamMember
           name="Estefania Ochoa"
           title="Organisation Team @HER DAO LATAM / CABIN DAO / INK DAO"
-          image={isla}
+          image={estefania}
           desc="Estefania has over 10+ years in community building and event planning. She began her blockchain journey in 2021 while working at bG gallery, and began onboarding artists to NFTs.
           Today she is able to use these skills as she facilitates developer experiences and programs. Estefanía Ochoa is an advocate for education and accessibility in the blockchain ecosystem. 
           She is fueled by her background in supporting underrepresented creators in the traditional markets and empowering them with new opportunities being provided by Blockchain technology. 
@@ -76,7 +82,7 @@ const Team = (): JSX.Element => {
         <TeamMember
           name="Daniel Dohne"
           title="Organisation Team @Aramid DAO"
-          image={isla}
+          image={daniel}
           desc="Daniel has a background in software engineering and has experience in web2 and web3 startups in the DeFi, ReFi and DeSci space as well as big4 companies building 
           regulatory software used at 80% of Swiss private banks, and has been working in the crypto space since 2017. He’s a passionate web3 trader and investor in future oriented 
           technology and a co-founder at Aramid Labs, a collective of builders who have created an interoperability protocol between Algorand, other non-EVM and EVM networks. 
@@ -85,14 +91,14 @@ const Team = (): JSX.Element => {
         <TeamMember
           name="Esteve Clavera"
           title="Organisation Team"
-          image={isla}
+          image={esteve}
           desc="Advisor to W3st DAO, member of FTW DAO. Esteve is an experienced project manager and was part of the organising team of NFT Berlin. 
           He believes web3 has the potential to improve humankind current challenges massively onboarding non-web3 native and cross-relating physical and digital realities."
         />
         <TeamMember
           name="Hongyang (Una) Wang"
           title="Organisation Team @DAO Suisse"
-          image={isla}
+          image={anon}
           desc="Una is a PhD student at ETH Zürich lead on project no1s1, a self-owning house on the blockchain. The idea is derived from concept nature 2.0, crypto commons, etc. 
           The research aims at explore a new way of living where nature and the cyber-physical integrated built environment organized by DAO as CPR. She’s also a founding member of DAO Suisse,
            a non-profit organisation with the mission to promote and lobby for DAOs and DAO-friendly regulation in Switzerland. She personally also cares deeply about concepts such as DAO, UBI, UBC etc."
@@ -100,7 +106,7 @@ const Team = (): JSX.Element => {
         <TeamMember
           name="Victoria Citterio-Soelle"
           title="Organisation Team @FTW.DAO"
-          image={isla}
+          image={victoria}
           desc="Victoria is a policy and operations expert with 10+ years of international experience, working across all levels from the highest office in government to top executives of multinationals to
            social entrepreneurs launching their ventures. Throughout her career, she has been building bridges and alliances between the public and the private sector, the old and new economy, and the analog and 
            digital world. What drives her are the questions of 'what brings people together, what keeps them engaged and how to regulate the spaces where we interact'. Particularly the last question,
@@ -111,7 +117,7 @@ const Team = (): JSX.Element => {
         <TeamMember
           name="Richa Parikh"
           title="Organisation Team @Bankless DAO/ FTW.DAO"
-          image={isla}
+          image={anon}
           desc="Richa is building Web3 products & primitives which on-ramp the next 100M users and level the playing field. She’s a core contributor to the DAO native start-up, BanklessCard, a member at FTW DAO,
            and Token Engineering Commons.  In her pre web3 career she’s an experienced fintech operator and product manager, and an early member at a Canadian Fintech unicorn - Wealthsimple and American fintech 
            - Moneyworld. Also, ex co--founder of PublicSquare which built software for advocacy groups and politicians to build consensus. Interested in public good governance and levelling the playing field in Web3.
@@ -120,7 +126,7 @@ const Team = (): JSX.Element => {
         <TeamMember
           name="Bo Brustkern"
           title="Organisation Team @Bankless DAO"
-          image={isla}
+          image={anon}
           desc="Bo Brustkern, aka brustkern.eth, is a fully doxed OG at BanklessDAO, DAOpunks, and other Web3 communities. His crypto journey began in spring 2014 and accelerated in the summer 
           of ‘21 when he joined BanklessDAO in Season 1. He has held positions as governance and guild coordinator, and has contributed to bDAO’s partnership with Index Coop. He is on the multi-sig 
           for BanklessCard. Bo straddles the TradFi and Web3 worlds in his work as co-founder & CEO of Fintech Nexus, one of the world’s most respected fintech media organisations. Previously, 
@@ -129,7 +135,7 @@ const Team = (): JSX.Element => {
         <TeamMember
           name="Al Mithani"
           title="Organisation Team @Bankless DAO/ FTW.DAO"
-          image={isla}
+          image={anon}
           desc="Al is a software engineer by training and a product leader by trade. He’s web2 startup veteran, and has led teams to create award-winning products and serve hundreds of thousands of users.
           He’s passionate about building sustainable teams and social-impact products, and brings his experience to bear as the Lead of the BanklessDAO Grants Committee, Founder of Bankless Card, Founding Member 
           of FTWDAO, and Executive-in-Residence at Blaise Transit.  He believes that web3 has the ability to create a new wave of truly equitable, accessible, and resilient organisations that allow people around 
@@ -138,7 +144,7 @@ const Team = (): JSX.Element => {
         <TeamMember
           name="Dr. Mara Harvey"
           title="Organisation Team @FTW.DAO"
-          image={isla}
+          image={mara}
           desc="Dr. Mara Catherine Harvey. Mara is a senior manager in finance with over 20 years of experience, and is an active advocate for gender equality. 
           She had the privilege to work with Billionaire families across Europe and launched a transformation program to better serve female clients & advance inclusion, 
           building an award winning team and catalysing over 1b USD of capital into investments supporting gender equality. Mara has been attending the WEF for many years, as a leader, 
