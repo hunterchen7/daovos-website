@@ -99,11 +99,12 @@ const Tickets = (): JSX.Element => {
         </div>
         <div></div>
         <div className="grid grid-cols-1 grid-flow-row items-center md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10 lg:gap-14">
-          <Ticket title="Early Bird" price="100" />
-          <Ticket title="Regular" price="200" />
-          <Ticket title="DAO Member" price="300" />
-          <Ticket title="VIP" price="400" />
-          <Ticket title="Sponsor" price="500" />
+          <Ticket title="DAO Lobbyist" price="100 USDC" />
+          <Ticket title="Founding Member" price="1'300 USDC" />
+          <Ticket title="Founding Angel" price="5'000 USDC" />
+          <Ticket title="Founding DAO" price="25'000 USDC" />
+          <Ticket title="Sponsor" price="25'000 USDC" />
+          <Ticket title="Partner" price="80'000 USDC" />
         </div>
       </div>
     </div>
