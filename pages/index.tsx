@@ -21,7 +21,7 @@ export default function Home() {
       <Header />
       <Daovos />
       <div className="flex justify-center text-5xl font-bold py-6">
-        OUR SUPPORTERS | DAO SUISSE | ARAMID |
+        OUR SUPPORTERS  | FTW DAO | DAO SUISSE | ARAMID DAO | NGV DAO | BANKLESS DAO
       </div>
       <Daovos2 />
       <Agenda />
