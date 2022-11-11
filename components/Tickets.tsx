@@ -99,12 +99,24 @@ const Tickets = (): JSX.Element => {
         </div>
         <div></div>
         <div className="grid grid-cols-1 grid-flow-row items-center md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10 lg:gap-14">
-          <Ticket title="DAO Lobbyist" price="100 USDC" />
-          <Ticket title="Founding Member" price="1'300 USDC" />
-          <Ticket title="Founding Angel" price="5'000 USDC" />
-          <Ticket title="Founding DAO" price="25'000 USDC" />
-          <Ticket title="Sponsor" price="25'000 USDC" />
-          <Ticket title="Partner" price="80'000 USDC" />
+          <Ticket title="DAO Lobbyist" price="100 USDC" 
+          description="You think what those crazy kids in Davos are doing is important and you want to be part of it. You
+           can’t take part in person but that doesn’t mean you’re not going to be part of the action. Lobbyists receive non-fungible
+            proof of their support for DAOVOS at genesis, and access to any DAOVOS metaverse events in 2023."/>
+          <Ticket title="Founding Member" price="1'300 USDC" 
+          description="You believe what those crazy kids in Davos are doing is important and you want to be part of it. Individuals
+           receive a single ticket to Davos 2023, and non-fungible evidence that they are amongst the founding members of DAOVOS DAO." />
+          <Ticket title="Founding Angel" price="5'000 USDC" 
+          description="You’re ‘just’ one person or a small DAO with a vision, but you believe that what DAOVOS DAO is building 
+          has an important role to play in bringing DAOs and decentralised culture to the forefront of human development. 
+          You want to support the cause beyond the price of an individual ticket. Your name will go on the ‘wall of fame’ 
+          of founding angels of DAOVOS DAO." />
+          <Ticket title="Founding Organisation" price="25'000 USDC" 
+          description="" />
+          <Ticket title="Partner" price="80'000 USDC" 
+          description="We’re excited to offer two spaces as full partners on DAOVOS
+           inaugural event in 2023. Our partners will have premium full size logo placement,
+            your own dedicated area in our event space, and prominent placement in media and PR around the DAOVOS event." />
         </div>
       </div>
     </div>
