@@ -26,7 +26,7 @@ const Tickets = (): JSX.Element => {
         className="flex justify-center self-center text-center hover:cursor-pointer"
       >
         <div className="w-[90px] h-[130px] md:w-[120px] md:h-[180px] bg-[#E2FF8A] text-2xl md:text-3xl lg:text-4xl font-semibold flex flex-col justify-center text-center border border-black">
-          $ {price}
+          {price}
         </div>
         <div className="w-[120px] md:w-[150px] flex flex-col justify-center">
           <div className="my-3 h-[110px] md:h-[160px] border-y border-black flex flex-col justify-center text-xl md:text-2xl font-semibold">
@@ -89,8 +89,8 @@ const Tickets = (): JSX.Element => {
   }
 
   return (
-    <div className="w-[97vw] -mt-20 lg:-mt-64 pb-8 mb-8 md:pb-16 md:mb-16 border-b-2 border-black">
-      <div className="flex justify-end" id="tickets">
+    <div className="w-[97vw] -mt-12 lg:-mt-48 pb-8 mb-8 md:pb-16 md:mb-16 border-b-2 border-black z-0">
+      <div className="flex justify-end z-0" id="tickets">
         <Image src="/ticket.svg" alt="TICKETS" width={1200} height={300} />
       </div>
       <div className="flex flex-col justify-around gap-8 items-center">
@@ -103,17 +103,17 @@ const Tickets = (): JSX.Element => {
           description="You think what those crazy kids in Davos are doing is important and you want to be part of it. You
            can’t take part in person but that doesn’t mean you’re not going to be part of the action. Lobbyists receive non-fungible
             proof of their support for DAOVOS at genesis, and access to any DAOVOS metaverse events in 2023."/>
-          <Ticket title="Founding Member" price="1'300 USDC" totalAvailable="100"
+          <Ticket title="Founding Member" price="1,300 USDC" totalAvailable="100"
           description="You believe what those crazy kids in Davos are doing is important and you want to be part of it. Individuals
            receive a single ticket to Davos 2023, and non-fungible evidence that they are amongst the founding members of DAOVOS DAO." />
-          <Ticket title="Founding Angel" price="5'000 USDC" totalAvailable="25"
+          <Ticket title="Founding Angel" price="5,000 USDC" totalAvailable="25"
           description="You’re ‘just’ one person or a small DAO with a vision, but you believe that what DAOVOS DAO is building 
           has an important role to play in bringing DAOs and decentralised culture to the forefront of human development. 
           You want to support the cause beyond the price of an individual ticket. Your name will go on the ‘wall of fame’ 
           of founding angels of DAOVOS DAO." />
-          <Ticket title="Founding Organisation" price="25'000 USDC" totalAvailable="12"
+          <Ticket title="Founding Organisation" price="25,000 USDC" totalAvailable="12"
           description="" />
-          <Ticket title="Partner" price="80'000 USDC" totalAvailable="2"
+          <Ticket title="Partner" price="80,000 USDC" totalAvailable="2"
           description="We’re excited to offer two spaces as full partners on DAOVOS
            inaugural event in 2023. Our partners will have premium full size logo placement,
             your own dedicated area in our event space, and prominent placement in media and PR around the DAOVOS event." />

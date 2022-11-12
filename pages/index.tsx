@@ -12,7 +12,7 @@ import Philosophy from '../components/Philosophy';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className='mx-3'>
       <Head>
         <title>DAOVOS™</title>
         <meta name="description" content="DAOVOS web page" />

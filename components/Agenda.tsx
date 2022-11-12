@@ -63,8 +63,17 @@ const Agenda = (): JSX.Element => {
         </div>
         <div className="md:w-1/2 self-center text-xl font-nunito my-12">
           The DAOVOS community is deeply committed to the principles of diversity, inclusion, transparency, privacy and decentralisation, and these values will be reflected in our conversations and our actions as a collective. See here for the 2023 draft agenda.
-        </div>        
+        </div>
+        <a
+          className="md:w-1/6 flex justify-center self-center z-10 bg-white border border-black p-2 px-3 rounded-full gap-2 select-none ease-in-out duration-100 hover:cursor-pointer hover:bg-black hover:text-white"
+          href="https://forms.gle/D5wCcbx6JXZpXGmK7?"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="self-center text-xl font-semibold">Apply to Speak</div>
+        </a>        
       </div>
+
     </div>
     
   )

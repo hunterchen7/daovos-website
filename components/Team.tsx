@@ -7,7 +7,16 @@ import esteve from "../public/team_members/esteve.jpeg";
 import victoria from "../public/team_members/victoria.jpeg";
 import daniel from "../public/team_members/daniel.png";
 import anon from "../public/team_members/anon-avatar.png";
-import una from "../public/team_members/una.jpeg";
+import una from "../public/team_members/una.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithub,
+  faTwitter,
+  faLinkedin,
+} from '@fortawesome/free-brands-svg-icons';
+import {
+  faGlobeAmericas
+} from '@fortawesome/free-solid-svg-icons';
 
 const shimmer = (w: number, h: number) => 
 `<svg width="${w}" height="${h}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -30,27 +39,50 @@ typeof window === 'undefined'
 const blurData = `data:image/svg+xml;base64,${toBase64(shimmer(700, 700))}`;
 
 const Team = (): JSX.Element => {
-  const TeamMember = (props: any): JSX.Element => {
-    const { name, title, image, desc } = props;
+  const Link = (props: any): JSX.Element => {
+    const { link, icon } = props;
     return (
-      <div className="flex flex-col justify-center bg-white border border-black my-3 md:mx-3 py-2">
+      link &&
+      <a
+        className="flex justify-center"
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FontAwesomeIcon className="h-6 w-6 text-[rgb(100,100,100)] hover:text-[rgb(226,254,139)] cursor-pointer ease-in-out duration-100" icon={icon}/>
+      </a>
+    );
+  }
+
+  const TeamMember = (props: any): JSX.Element => {
+    const { name, title, image, desc, twitter, github, linkedin, website } = props;
+    return (
+      <div className="flex flex-col justify-start bg-white border border-black my-3 md:mx-3 py-2 h-full">
         <div className="flex justify-center mx-14 md:mx-24 lg:mx-36 my-6 bg-black rounded-full">
-          <Image
+          <div className="relative rounded-full overflow-hidden z-0">
+            <Image
               src={image}
               objectFit={'cover'}
               layout={'responsive'}
               placeholder={'blur'}
               blurDataURL={blurData}
               alt={name}
-          />
+            />
+          </div>
         </div>
         <div className="text-center text-3xl font-bold">
           {name}
         </div>
+        <div className="flex justify-center m-2 flex-row gap-2 items-center">
+          <Link link={twitter} icon={faTwitter} />
+          <Link link={github} icon={faGithub} />
+          <Link link={linkedin} icon={faLinkedin} />
+          <Link link={website} icon={faGlobeAmericas} />
+        </div>
         <div className="text-center font-nunito text-xl my-2">
           {title}
         </div>
-        <div className="text-center font-nunito m-4">
+        <div className="text-center font-nunito m-4 md:mx-8">
           {desc}
         </div>
       </div>
@@ -63,7 +95,7 @@ const Team = (): JSX.Element => {
       <div className="grid grid-cols-1 grid-flow-row items-center md:grid-cols-2 lg:grid-cols-3 gap-10 mx-6 md:mx-10 lg:mx-16">
         <TeamMember
           name="Isla Munro"
-          title="Organisation Team @FTW.DAO"
+          title="Organisation Team @ FTW.DAO"
           image={isla}
           desc="​​Isla is the co-founder of FTW DAO, a social and venture DAO ecosystem with the goal of funding diverse founders globally. She was previously part of a seed 
           stage VC fund investing in CEE & Baltics and has worked in and around finance and impact for the past 10 years. She's passionate about innovating on financial models 
@@ -75,7 +107,7 @@ const Team = (): JSX.Element => {
         />
         <TeamMember
           name="Estefania Ochoa"
-          title="Organisation Team @HER DAO LATAM / CABIN DAO / INK DAO"
+          title="Organisation Team @ HER DAO LATAM / CABIN DAO / INK DAO"
           image={estefania}
           desc="Estefania has over 10+ years in community building and event planning. She began her blockchain journey in 2021 while working at bG gallery, and began onboarding artists to NFTs.
           Today she is able to use these skills as she facilitates developer experiences and programs. Estefanía Ochoa is an advocate for education and accessibility in the blockchain ecosystem. 
@@ -86,7 +118,7 @@ const Team = (): JSX.Element => {
         />
         <TeamMember
           name="Daniel Dohne"
-          title="Organisation Team @Aramid DAO"
+          title="Organisation Team @ Aramid DAO"
           image={daniel}
           desc="Daniel has a background in software engineering and has experience in web2 and web3 startups in the DeFi, ReFi and DeSci space as well as big4 companies building 
           regulatory software used at 80% of Swiss private banks, and has been working in the crypto space since 2017. He’s a passionate web3 trader and investor in future oriented 
@@ -106,7 +138,7 @@ const Team = (): JSX.Element => {
         />
         <TeamMember
           name="Hongyang (Una) Wang"
-          title="Organisation Team @DAO Suisse"
+          title="Organisation Team @ DAO Suisse"
           image={una}
           desc="Una is a PhD student at ETH Zürich lead on project no1s1, a self-owning house on the blockchain. The idea is derived from concept nature 2.0, crypto commons, etc. 
           The research aims at explore a new way of living where nature and the cyber-physical integrated built environment organized by DAO as CPR. She’s also a founding member of DAO Suisse,
@@ -114,7 +146,7 @@ const Team = (): JSX.Element => {
         /> 
         <TeamMember
           name="Victoria Citterio-Soelle"
-          title="Organisation Team @FTW.DAO"
+          title="Organisation Team @ FTW.DAO"
           image={victoria}
           desc="Victoria is a policy and operations expert with 10+ years of international experience, working across all levels from the highest office in government to top executives of multinationals to
            social entrepreneurs launching their ventures. Throughout her career, she has been building bridges and alliances between the public and the private sector, the old and new economy, and the analog and 
@@ -126,7 +158,7 @@ const Team = (): JSX.Element => {
         />
         <TeamMember
           name="Dr. Mara Harvey"
-          title="Organisation Team @FTW.DAO"
+          title="Organisation Team @ FTW.DAO"
           image={mara}
           desc="Dr. Mara Catherine Harvey. Mara is a senior manager in finance with over 20 years of experience, and is an active advocate for gender equality. 
           She had the privilege to work with Billionaire families across Europe and launched a transformation program to better serve female clients & advance inclusion, 

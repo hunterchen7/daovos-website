@@ -45,7 +45,7 @@ const Header = (): JSX.Element => {
   };
 
   return (
-    <header className="flex flex-row self-center items-center justify-between py-2 md:gap-4 sticky top-0 bg-white border-b-2 border-black w-[96.5vw]">
+    <header className="flex flex-row self-center items-center justify-between py-2 md:gap-4 sticky top-0 bg-white border-b-2 border-black w-[96.5vw] z-20">
       <h1 className="font-extrabold text-4xl lg:text-5xl">DAOVOS</h1>
       <div
         className={`flex lg:hidden cursor-pointer select-none ease-in-out duration-200 hover:bg-dark-label p-2 place-items-center place-content-center border-menu-dropdown-border border-2 w-14 h-14 rounded-full ${
@@ -90,7 +90,7 @@ const Header = (): JSX.Element => {
         <HeaderButton to="philosophy" text="Philosophy" />
       </div>
       <div
-        className={`z-2 text-right gap-4 py-4 px-8 absolute top-20 right-2 flex flex-col text-md font-medium bg-background-secondary backdrop-blur-lg border-2 border-dark-elevation rounded-3xl ${
+        className={`z-2 text-right gap-4 py-4 px-8 absolute top-20 right-2 flex flex-col text-md font-medium bg-background-secondary backdrop-blur-lg border-2 rounded-3xl w-full ${
           menuDropped ? 'lg:hidden' : 'hidden'
         }`}
       >
