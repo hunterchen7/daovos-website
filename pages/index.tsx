@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.css';
 import Header from '../components/Header';
 import Daovos from '../components/Daovos';
 import Daovos2 from '../components/Daovos2';
+import Event from '../components/Event';
 import Agenda from '../components/Agenda';
 import Tickets from '../components/Tickets';
 import Team from '../components/Team';
@@ -24,6 +25,7 @@ export default function Home() {
         OUR SUPPORTERS  | FTW DAO | DAO SUISSE | ARAMID DAO | NGV DAO | BANKLESS DAO
       </div>
       <Daovos2 />
+      <Event />
       <Agenda />
       <Tickets />
       <Team />

@@ -83,6 +83,7 @@ const Header = (): JSX.Element => {
 
       <div className="hidden lg:flex flex-row self-center justify-center font-nunito">
         <HeaderButton to="daovos" text="DAOVOS" />
+        <HeaderButton to="event" text="Event" />
         <HeaderButton to="agenda" text="Agenda" />
         {/*<HeaderButton to="event" text="Event"/>*/}
         <HeaderButton to="tickets" text="Tickets" />
@@ -95,6 +96,7 @@ const Header = (): JSX.Element => {
         }`}
       >
         <HeaderButton to="daovos" text="DAOVOS" />
+        <HeaderButton to="event" text="Event" />
         <HeaderButton to="agenda" text="Agenda" />
         {/*<HeaderButton to="event" text="Event"/>*/}
         <HeaderButton to="tickets" text="Tickets" />

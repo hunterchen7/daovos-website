@@ -109,7 +109,7 @@ const Tickets = (): JSX.Element => {
           <Ticket title="Founding Angel" price="5,000 USDC" totalAvailable="25"
           description="You’re ‘just’ one person or a small DAO with a vision, but you believe that what DAOVOS DAO is building 
           has an important role to play in bringing DAOs and decentralised culture to the forefront of human development. 
-          You want to support the cause beyond the price of an individual ticket. Your name will go on the ‘wall of fame’ 
+          You want to support the cause beyond the price of an individual ticket. Your name will go on the ‘Wall of Fame’ 
           of founding angels of DAOVOS DAO." />
           <Ticket title="Founding Organisation" price="25,000 USDC" totalAvailable="12"
           description="" />
