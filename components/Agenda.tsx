@@ -50,7 +50,7 @@ const Agenda = (): JSX.Element => {
       <div className="flex justify-center m-12">
         <Image src="/2030.svg" alt="OURPLAN" width={700} height={700}/>
       </div>
-      <div className="self-center text-4xl font-nunito">
+      <div className="self-center text-4xl font-nunito text-center">
         FIVE KEY STREAMS FOR <span className="font-extrabold">DAOVOS</span> DISCUSSION
       </div>
       <div className="flex flex-col self-center w-[95.7vw] gap-4 p-10 bg-[url('../public/plan_bg.svg')] bg-cover bg-no-repeat">
