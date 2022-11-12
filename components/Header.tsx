@@ -2,31 +2,8 @@ import { Link } from 'react-scroll';
 import React, { useState } from 'react';
 import BookYourSpot from './BookYourSpot';
 
-import {
-  useAddress,
-  useDisconnect,
-  useMetamask,
-  useContract,
-  useNetwork,
-  useNetworkMismatch,
-  ConnectWallet,
-} from '@thirdweb-dev/react';
-
-// import {
-//   ChainId,
-//   ClaimConditionInputArray,
-//   SignatureDrop,
-//   SignedPayload721WithQuantitySignature,
-// } from '@thirdweb-dev/sdk';
-
 const Header = (): JSX.Element => {
   const [menuDropped, setMenuDropped] = useState(false);
-
-  const address = useAddress();
-  const connectWithMetamask = useMetamask();
-  //const disconnectWallet = useDisconnect();
-  const isMismatch = useNetworkMismatch();
-  const [, switchNetwork] = useNetwork();
 
   const HeaderButton = (props: any): JSX.Element => {
     const { to, text } = props;
@@ -68,17 +45,6 @@ const Header = (): JSX.Element => {
             strokeLinecap="round"
           />
         </svg>
-      </div>
-
-      <div>
-        {address ? (
-          <div>
-            {' '}
-            {address.slice(1, 6)}...{address.slice(-5)}
-          </div>
-        ) : (
-          <button onClick={() => connectWithMetamask()}>Connect wallet</button>
-        )}
       </div>
 
       <div className="hidden lg:flex flex-row self-center justify-center font-nunito">

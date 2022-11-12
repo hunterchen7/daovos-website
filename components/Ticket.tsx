@@ -1,9 +1,8 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 const Ticket = (props: any): JSX.Element => {
   const [ticketOpen, setTicketOpen] = useState(false);
-
-  const { title, price, description } = props;
+  const { claim, title, price, description } = props;
   return (
     <div
       onClick={() => setTicketOpen(!ticketOpen)}
@@ -32,15 +31,24 @@ const Ticket = (props: any): JSX.Element => {
           />
         </svg>
       </div>
-      {
-        ticketOpen && 
-        <div className='fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white font-nunito p-10 rounded-3xl border border-2 z-[101]'>
-          
+      {ticketOpen && (
+        <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white font-nunito p-10 rounded-3xl border border-2 z-[101]">
           <h1 className="text-3xl leading-loose">{title}</h1>
+          <button
+            onClick={() => claim(price)}
+            className="text-3xl leading-loose"
+          >
+            click here to BUY TICKET!!!
+          </button>
           <div>{description}</div>
         </div>
-      }
-      <div className={`fixed top-0 left-0 w-full h-full backdrop-blur-sm ${!ticketOpen ? 'hidden' : ''} z-[100]`}></div> {/* backdrop for ticket window */}
+      )}
+      <div
+        className={`fixed top-0 left-0 w-full h-full backdrop-blur-sm ${
+          !ticketOpen ? 'hidden' : ''
+        } z-[100]`}
+      ></div>{' '}
+      {/* backdrop for ticket window */}
     </div>
   );
 };
