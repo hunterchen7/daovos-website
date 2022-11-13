@@ -124,7 +124,7 @@ const Team = (): JSX.Element => {
         <TeamMember
           name="Daniel Dohne"
           title="Organisation Team"
-          title2="Core Contributor at ARAMID DAO, NEXT GEN VILLAGE DAO and FTW DAO"
+          title2="Core Contributor at ARAMID DAO / NEXT GEN VILLAGE DAO / FTW DAO"
           image={daniel}
           desc="Daniel has a background in software engineering and has experience in web2 and web3 startups in the DeFi, ReFi and DeSci space as well as big4 companies building 
           regulatory software used at 80% of Swiss private banks, and has been working in the crypto space since 2017. He’s a passionate web3 trader and investor in future oriented 
@@ -133,10 +133,21 @@ const Team = (): JSX.Element => {
           linkedin="https://www.linkedin.com/in/ddohne"
           twitter="https://mobile.twitter.com/Cryptobrothers2"
         />
+
+        <TeamMember
+          name="Dr. Mara Harvey"
+          title="Organisation Team"
+          title2="Founding Member @ FTW DAO"
+          image={mara}
+          desc="Dr. Mara Catherine Harvey. Mara is a senior leader in finance with over 20 years of experience, and is an active advocate for gender equality. She worked closely with billionaire families across Europe, and launched a transformation program to better serve female banking clients & advance inclusion. Her works catalysed over 1b USD of capital into investments supporting gender equality. She was an early financial contributor to FTW DAO, and is increasingly adopting web3, NFTs 
+          and crypto education into her work, helping parents prepare their children for their financial futures."
+          linkedin="https://www.linkedin.com/in/drmaraharvey/"
+        />
+        
         <TeamMember
           name="Esteve Clavera"
           title="Organisation Team"
-          title2="Core Contributor @ METAFACTORY, FTWDAO, NFTBERLIN, W3ST DAO"
+          title2="Core Contributor @ METAFACTORY / FTWDAO / NFTBERLIN / W3ST DAO"
           image={esteve}
           desc="Advisor to W3st DAO, member of FTW DAO. Esteve is an experienced project manager and was part of the organising team of NFT Berlin. 
           He believes web3 has the potential to improve humankind current challenges massively onboarding non-web3 native and cross-relating physical and digital realities."
@@ -163,15 +174,7 @@ const Team = (): JSX.Element => {
           "
           linkedin="https://www.linkedin.com/in/victoriacitteriosoelle/"
         />
-        <TeamMember
-          name="Dr. Mara Harvey"
-          title="Organisation Team"
-          title2="Founding Member @ FTW DAO"
-          image={mara}
-          desc="Dr. Mara Catherine Harvey. Mara is a senior leader in finance with over 20 years of experience, and is an active advocate for gender equality. She worked closely with billionaire families across Europe, and launched a transformation program to better serve female banking clients & advance inclusion. Her works catalysed over 1b USD of capital into investments supporting gender equality. She was an early financial contributor to FTW DAO, and is increasingly adopting web3, NFTs 
-          and crypto education into her work, helping parents prepare their children for their financial futures."
-          linkedin="https://www.linkedin.com/in/drmaraharvey/"
-        />
+
         </div>
       <div className="w-[80vw] lg:w-[95.75vw] text-center bg-white p-6 mt-4 border-black border flex flex-col gap-4 mb-8 md:mb-16">
         <div className="text-4xl font-semibold">
