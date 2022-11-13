@@ -44,7 +44,7 @@ const Event = (): JSX.Element => {
           <div className="flex bg-white">
             <div className="w-1/12 sm:w-1/5 lg:w-1/4 bg-[#E2FF8A]"/>
             <div className="flex justify-end w-full bg-[#E2FF8A] py-10 pr-16 md:pr-20 lg:pr-36 rounded-r-full text-end">
-              <Text title={"50+ DAOminaries"} text={'From across the globe, flown in to bring their voices to a global audience'} />
+              <Text title={"50+ DAOminaries"} text={'From across the globe, bringing their voices to a global audience'} />
             </div>
             <div className="w-1/12 sm:w-1/5 lg:w-1/4 bg-white"/>
           </div>
