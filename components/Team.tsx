@@ -111,7 +111,8 @@ const Team = (): JSX.Element => {
         />
         <TeamMember
           name="Estefania Ochoa"
-          title="Organisation Team @ HER DAO LATAM / CABIN DAO / INK DAO"
+          title="Organisation Team"
+          title2="Core Contributor @ HER DAO LATAM / CABIN DAO / INK DAO"
           image={estefania}
           desc="Estefania has over 10+ years in community building and event planning. She began her blockchain journey in 2021 while working at bG gallery, and began onboarding artists to NFTs.
           Today she is able to use these skills as she facilitates developer experiences and programs. Estefanía Ochoa is an advocate for education and accessibility in the blockchain ecosystem. 
@@ -123,6 +124,7 @@ const Team = (): JSX.Element => {
         <TeamMember
           name="Daniel Dohne"
           title="Organisation Team @ Aramid DAO"
+          title2="Core Contributor Aramid DAO, Next Gen Village DAO and FTW DAO"
           image={daniel}
           desc="Daniel has a background in software engineering and has experience in web2 and web3 startups in the DeFi, ReFi and DeSci space as well as big4 companies building 
           regulatory software used at 80% of Swiss private banks, and has been working in the crypto space since 2017. He’s a passionate web3 trader and investor in future oriented 
@@ -134,6 +136,7 @@ const Team = (): JSX.Element => {
         <TeamMember
           name="Esteve Clavera"
           title="Organisation Team"
+          title2="Core Contributor @ MetaFactory, FTWDAO, NFTBerlin, W3ST DAO, LTL, INKOLLECTORS, ENT3R, and formerly at FLOC"
           image={esteve}
           desc="Advisor to W3st DAO, member of FTW DAO. Esteve is an experienced project manager and was part of the organising team of NFT Berlin. 
           He believes web3 has the potential to improve humankind current challenges massively onboarding non-web3 native and cross-relating physical and digital realities."
@@ -142,7 +145,8 @@ const Team = (): JSX.Element => {
         />
         <TeamMember
           name="Hongyang (Una) Wang"
-          title="Organisation Team @ DAO Suisse"
+          title="Organisation Team"
+          title2="Founding Member @ DAO Suisse"
           image={una}
           desc="Una is a PhD student at ETH Zürich lead on project no1s1, a self-owning house on the blockchain. The idea is derived from concept nature 2.0, crypto commons, etc. 
           The research aims at explore a new way of living where nature and the cyber-physical integrated built environment organized by DAO as CPR. She’s also a founding member of DAO Suisse,
@@ -150,7 +154,8 @@ const Team = (): JSX.Element => {
         /> 
         <TeamMember
           name="Victoria Citterio-Soelle"
-          title="Organisation Team @ FTW.DAO"
+          title="Organisation Team"
+          title2="Founding Member @ FTW DAO"
           image={victoria}
           desc="Victoria is a policy and operations expert with 10+ years of international experience, working across all levels from the highest office in government to top executives of multinationals to
            social entrepreneurs launching their ventures. Throughout her career, she has been building bridges and alliances between the public and the private sector, the old and new economy, and the analog and 
@@ -162,7 +167,8 @@ const Team = (): JSX.Element => {
         />
         <TeamMember
           name="Dr. Mara Harvey"
-          title="Organisation Team @ FTW.DAO"
+          title="Organisation Team"
+          title2="Founding Member @ FTW DAO"
           image={mara}
           desc="Dr. Mara Catherine Harvey. Mara is a senior manager in finance with over 20 years of experience, and is an active advocate for gender equality. 
           She had the privilege to work with Billionaire families across Europe and launched a transformation program to better serve female clients & advance inclusion, 
