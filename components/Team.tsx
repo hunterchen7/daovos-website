@@ -99,7 +99,7 @@ const Team = (): JSX.Element => {
         <TeamMember
           name="Isla Munro"
           title="Organisation Team"
-          title2="Founder @ FTW DAO and Core Contributor @ Bankless DAO / Fight Club DAO / Expansion DAO"
+          title2="Founder @ FTW DAO <br></br> Core Contributor @ Bankless DAO / Fight Club DAO / Expansion DAO"
           image={isla}
           desc="​​Isla is the co-founder of FTW DAO, a social and venture DAO ecosystem with the goal of funding diverse founders globally. She was previously part of a seed 
           stage VC fund investing in CEE & Baltics and has worked in and around finance and impact for the past 10 years. She's passionate about innovating on financial models 
