@@ -141,7 +141,8 @@ const Team = (): JSX.Element => {
           image={mara}
           desc="Dr. Mara Catherine Harvey. Mara is a senior leader in finance with over 20 years of experience, and is an active advocate for gender equality. She worked closely with billionaire families across Europe, and launched a transformation program to better serve female banking clients & advance inclusion. Her works catalysed over 1b USD of capital into investments supporting gender equality. She was an early financial contributor to FTW DAO, and is increasingly adopting web3, NFTs 
           and crypto education into her work, helping parents prepare their children for their financial futures."
-          linkedin="https://www.linkedin.com/in/drmaraharvey/"
+          linkedin="https://www.linkedin.com/in/drmaraharvey/"  
+          twitter="https://twitter.com/DrMaraHarvey"
         />
         
         <TeamMember
@@ -162,6 +163,8 @@ const Team = (): JSX.Element => {
           desc="Una is a PhD student at ETH Zürich lead on project no1s1, a self-owning house on the blockchain. The idea is derived from concept nature 2.0, crypto commons, etc. 
           The research aims at explore a new way of living where nature and the cyber-physical integrated built environment organized by DAO as CPR. She’s also a founding member of DAO Suisse,
            a non-profit organisation with the mission to promote and lobby for DAOs and DAO-friendly regulation in Switzerland. She personally also cares deeply about concepts such as DAO, UBI, UBC etc."
+           linkedin="https://www.linkedin.com/in/hongyang-una-wang-36b56b22/"
+
         /> 
         <TeamMember
           name="Victoria Citterio-Soelle"
