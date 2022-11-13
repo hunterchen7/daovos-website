@@ -55,7 +55,7 @@ const Team = (): JSX.Element => {
   }
 
   const TeamMember = (props: any): JSX.Element => {
-    const { name, title, image, desc, twitter, github, linkedin, website } = props;
+    const { name, title, image, desc, title2, twitter, github, linkedin, website } = props;
     return (
       <div className="flex flex-col justify-start bg-white border border-black my-3 md:mx-3 py-2 h-full">
         <div className="flex justify-center mx-14 md:mx-24 lg:mx-36 my-6 bg-black rounded-full">
@@ -82,6 +82,9 @@ const Team = (): JSX.Element => {
         <div className="text-center font-nunito text-xl my-2">
           {title}
         </div>
+        <div className="text-center font-nunito text-xl my-2">
+          {title2}
+        </div>
         <div className="text-center font-nunito m-4 md:mx-8">
           {desc}
         </div>
@@ -96,7 +99,7 @@ const Team = (): JSX.Element => {
         <TeamMember
           name="Isla Munro"
           title="Organisation Team"
-          title="Founder @ FTW DAO and Core Contributor @ Bankless DAO / Fight Club DAO / Expansion DAO"
+          title2="Founder @ FTW DAO and Core Contributor @ Bankless DAO / Fight Club DAO / Expansion DAO"
           image={isla}
           desc="​​Isla is the co-founder of FTW DAO, a social and venture DAO ecosystem with the goal of funding diverse founders globally. She was previously part of a seed 
           stage VC fund investing in CEE & Baltics and has worked in and around finance and impact for the past 10 years. She's passionate about innovating on financial models 
