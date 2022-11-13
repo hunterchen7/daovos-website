@@ -159,9 +159,7 @@ const Team = (): JSX.Element => {
           image={victoria}
           desc="Victoria is a policy and operations expert with 10+ years of international experience, working across all levels from the highest office in government to top executives of multinationals to
            social entrepreneurs launching their ventures. Throughout her career, she has been building bridges and alliances between the public and the private sector, the old and new economy, and the analog and 
-           digital world. What drives her are the questions of 'what brings people together, what keeps them engaged and how to regulate the spaces where we interact'. Particularly the last question,
-            how to regulate the spaces where we interact, has become a focal point and she’s passionate about the emerging web3 space, its potential, and its drawbacks. Aside from working with teams,
-             traditional organisations, and DAOs, on the questions above, she’s also redefining the role of ownership and legacy in the family business.
+           digital world. What drives her are the questions of 'what brings people together, what keeps them engaged and how to regulate the spaces where we interact'. Aside from working with teams, traditional organisations, and DAOs, on the questions above, she’s also redefining the role of ownership and legacy in the family business.
           "
           linkedin="https://www.linkedin.com/in/victoriacitteriosoelle/"
         />
@@ -170,11 +168,8 @@ const Team = (): JSX.Element => {
           title="Organisation Team"
           title2="Founding Member @ FTW DAO"
           image={mara}
-          desc="Dr. Mara Catherine Harvey. Mara is a senior manager in finance with over 20 years of experience, and is an active advocate for gender equality. 
-          She had the privilege to work with Billionaire families across Europe and launched a transformation program to better serve female clients & advance inclusion, 
-          building an award winning team and catalysing over 1b USD of capital into investments supporting gender equality. Mara has been attending the WEF for many years, as a leader, 
-          and has deep insight and networks into what will shape a successful event in Davos. She was the first financial contributor to FTW DAO, outside of the founders, and is increasingly adopting web3, NFTs 
-          and crypto education into her work helping parents prepare their children for their financial futures."
+          desc="Dr. Mara Catherine Harvey. Mara is a senior leader in finance with over 20 years of experience, and is an active advocate for gender equality. She worked closely with billionaire families across Europe, and launched a transformation program to better serve female banking clients & advance inclusion. Her works catalysed over 1b USD of capital into investments supporting gender equality. She was an early financial contributor to FTW DAO, and is increasingly adopting web3, NFTs 
+          and crypto education into her work, helping parents prepare their children for their financial futures."
           linkedin="https://www.linkedin.com/in/drmaraharvey/"
         />
         </div>
