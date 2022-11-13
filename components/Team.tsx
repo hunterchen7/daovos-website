@@ -133,30 +133,8 @@ const Team = (): JSX.Element => {
           linkedin="https://www.linkedin.com/in/ddohne"
           twitter="https://mobile.twitter.com/Cryptobrothers2"
         />
-
         <TeamMember
-          name="Dr. Mara Harvey"
-          title="Organisation Team"
-          title2="Founding Member @ FTW DAO"
-          image={mara}
-          desc="Dr. Mara Catherine Harvey. Mara is a senior leader in finance with over 20 years of experience, and is an active advocate for gender equality. She worked closely with billionaire families across Europe, and launched a transformation program to better serve female banking clients & advance inclusion. Her works catalysed over 1b USD of capital into investments supporting gender equality. She was an early financial contributor to FTW DAO, and is increasingly adopting web3, NFTs 
-          and crypto education into her work, helping parents prepare their children for their financial futures."
-          linkedin="https://www.linkedin.com/in/drmaraharvey/"  
-          twitter="https://twitter.com/DrMaraHarvey"
-        />
-        
-        <TeamMember
-          name="Esteve Clavera"
-          title="Organisation Team"
-          title2="Core Contributor @ METAFACTORY / FTWDAO / NFTBERLIN / W3ST DAO"
-          image={esteve}
-          desc="Advisor to W3st DAO, member of FTW DAO. Esteve is an experienced project manager and was part of the organising team of NFT Berlin. 
-          He believes web3 has the potential to improve humankind current challenges massively onboarding non-web3 native and cross-relating physical and digital realities."
-          linkedin="https://www.linkedin.com/in/esteveserraclavera/"
-          twitter="https://twitter.com/nosoccomtothom"
-        />
-        <TeamMember
-          name="Hongyang (Una) Wang"
+          name="Dr. Hongyang (Una) Wang"
           title="Organisation Team"
           title2="Founding Member @ DAO SUISSE"
           image={una}
@@ -175,7 +153,27 @@ const Team = (): JSX.Element => {
            social entrepreneurs launching their ventures. Throughout her career, she has been building bridges and alliances between the public and the private sector, the old and new economy, and the analog and 
            digital world. What drives her are the questions of 'what brings people together, what keeps them engaged and how to regulate the spaces where we interact'. Aside from working with teams, traditional organisations, and DAOs, on the questions above, she’s also redefining the role of ownership and legacy in the family business.
           "
-          linkedin="https://www.linkedin.com/in/victoriacitteriosoelle/"
+          linkedin="https://www.linkedin.com/in/victoriacitteriosoelle/
+        />
+        <TeamMember
+          name="Esteve Clavera"
+          title="Organisation Team"
+          title2="Core Contributor @ METAFACTORY / FTWDAO / NFTBERLIN / W3ST DAO"
+          image={esteve}
+          desc="Advisor to W3st DAO, member of FTW DAO. Esteve is an experienced project manager and was part of the organising team of NFT Berlin. 
+          He believes web3 has the potential to improve humankind current challenges massively onboarding non-web3 native and cross-relating physical and digital realities."
+          linkedin="https://www.linkedin.com/in/esteveserraclavera/"
+          twitter="https://twitter.com/nosoccomtothom"
+        />
+          <TeamMember
+          name="Dr. Mara Harvey"
+          title="Organisation Team"
+          title2="Founding Member @ FTW DAO"
+          image={mara}
+          desc="Dr. Mara Catherine Harvey. Mara is a senior leader in finance with over 20 years of experience, and is an active advocate for gender equality. She worked closely with billionaire families across Europe, and launched a transformation program to better serve female banking clients & advance inclusion. Her works catalysed over 1b USD of capital into investments supporting gender equality. She was an early financial contributor to FTW DAO, and is increasingly adopting web3, NFTs 
+          and crypto education into her work, helping parents prepare their children for their financial futures."
+          linkedin="https://www.linkedin.com/in/drmaraharvey/"  
+          twitter="https://twitter.com/DrMaraHarvey"
         />
 
         </div>
