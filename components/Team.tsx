@@ -177,7 +177,7 @@ const Team = (): JSX.Element => {
           Reach out @
         </div>
         <div className="text-xl font-bold underline">
-          info@davos.global
+          hello@daovos.global
         </div>
       </div>
     </div>
