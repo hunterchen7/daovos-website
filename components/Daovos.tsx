@@ -16,7 +16,7 @@ const Daovos = (): JSX.Element => {
           Davos, Switzerland, January 2023
         </h1>
         <h1 className="font-nunito text-4xl font-semibold">
-          The Dao Forum
+          The DAO Forum
         </h1>
         <div className="flex gap-3">
           <Image src={twitter} alt="twitter" className="hover:cursor-pointer" />
