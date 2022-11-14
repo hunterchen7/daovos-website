@@ -10,6 +10,7 @@ import Agenda from '../components/Agenda';
 import Tickets from '../components/Tickets';
 import Team from '../components/Team';
 import Philosophy from '../components/Philosophy';
+import Supporters from '../components/Supporters';
 
 export default function Home() {
   return (
@@ -21,9 +22,7 @@ export default function Home() {
       </Head>
       <Header />
       <Daovos />
-      <div className="flex justify-center text-5xl font-bold py-6">
-        OUR SUPPORTERS  | FTW DAO | DAO SUISSE | ARAMID DAO | NGV DAO | BANKLESS DAO
-      </div>
+      <Supporters />
       <Daovos2 />
       <Event />
       <Agenda />
