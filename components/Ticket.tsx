@@ -12,6 +12,7 @@ import { ChainId } from '@thirdweb-dev/sdk';
 
 const Ticket = (props: any): JSX.Element => {
   const address = useAddress();
+  const [errorMessage, setErrorMessage] = useState('');
   const [ticketOpen, setTicketOpen] = useState(false);
   const { title, price, description, image } = props;
 
@@ -91,13 +92,9 @@ const Ticket = (props: any): JSX.Element => {
             <div>{description}</div>
             <button
               onClick={() => claim(price)}
-              className="text-3xl leading-loose"
-            >
-              click here to BUY TICKET!!!
-            </button>            
-          </div>
-          <div>
-            
+              className="bg-blue-500 hover:bg-blue-700 ease-in-out duration-150 text-white font-bold py-2 px-4 rounded-full margin-bottom:15px">
+              Purchase Ticket
+            </button>
           </div>
         </div>
       )}

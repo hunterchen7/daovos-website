@@ -71,43 +71,39 @@ const Tickets = (): JSX.Element => {
             title="DAO Lobbyist"
             price="100 USDC"
             totalAvailable="5000"
-            description="You think what those crazy kids in Davos are doing is important and you want to be part of it. You
-           can’t take part in person but that doesn’t mean you’re not going to be part of the action. Lobbyists receive non-fungible
-            proof of their support for DAOVOS at genesis, and access to any DAOVOS metaverse events in 2023."
+            description="Support DAOVOS by becoming a DAO member. Lobbyists receive a NFT proof of their support for DAOVOS and access to any DAOVOS metaverse events. "
           />
           <Ticket
             claim={claim}
             title="Founding Member"
             price="1,300 USDC"
             totalAvailable="100"
-            description="You believe what those crazy kids in Davos are doing is important and you want to be part of it. Individuals
-           receive a single ticket to Davos 2023, and non-fungible evidence that they are amongst the founding members of DAOVOS DAO."
+            description="Individuals receive a single ticket to Davos 2023 and a founding member NFT."
           />
           <Ticket
             claim={claim}
             title="Founding Angel"
             price="5,000 USDC"
             totalAvailable="25"
-            description="You’re ‘just’ one person or a small DAO with a vision, but you believe that what DAOVOS DAO is building 
-          has an important role to play in bringing DAOs and decentralised culture to the forefront of human development. 
-          You want to support the cause beyond the price of an individual ticket. Your name will go on the ‘Wall of Fame’ 
-          of founding angels of DAOVOS DAO."
+            description="For visionary individuals and DAOs, sharing our belief that what DAOVOS DAO is building has an important role to play in bringing DAOs and decentralised culture to the forefront of human development.
+             Angels receive 3 tickets for the Event in Davos 2023 and a founding angel NFT."
           />
           <Ticket
             claim={claim}
             title="Founding Organisation"
             price="25,000 USDC"
             totalAvailable="12"
-            description="placeholder text"
+            description="You’re in the business of Web3 and are excited to have your company represented on the world stage at DAOVOS. Place your brand front and centre for DAOs, DAOminiaries, changemakers and leaders.
+             Sponsor organisations believe in our mission and values, and want to be part of the DAOVOS family. You’ll be able to send DAOVOS delegates and we’ll feature your logo just below our partners in our marketing,
+              media and PR. Please reach out to us at hello@daovos.global to discuss your interest in becoming a founding organisation. Founding organisations receive 5 tickets for the event in Davos 2023"
           />
           <Ticket
             claim={claim}
             title="Partner"
             price="80,000 USDC"
             totalAvailable="2"
-            description="We’re excited to offer two spaces as full partners on DAOVOS
-           inaugural event in 2023. Our partners will have premium full size logo placement,
-            your own dedicated area in our event space, and prominent placement in media and PR around the DAOVOS event."
+            description="We’re excited to offer two spaces as full partners on DAOVOS’ inaugural event in 2023. Our partners will have premium full size logo placement, your own dedicated area in our event space, and prominent
+             placement in media and PR around the DAOVOS event. Please reach out to us at hello@daovos.global to discuss your interest in becoming a partner organisation. Partners receive 8 tickets for the event in Davos 2023"
           />
         </div>
       </div>

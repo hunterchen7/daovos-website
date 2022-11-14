@@ -16,12 +16,18 @@ const Daovos = (): JSX.Element => {
           Davos, Switzerland, January 2023
         </h1>
         <h1 className="font-nunito text-4xl font-semibold">
-          The Dao Forum
+          The DAO Forum
         </h1>
         <div className="flex gap-3">
+          <a href='https://twitter.com/daovosglobal' target="_blank" rel='noreferrer'>
           <Image src={twitter} alt="twitter" className="hover:cursor-pointer" />
+          </a>
+          <a>
           <Image src={discord} alt="discord" className="hover:cursor-pointer" />
+          </a>
+          <a href="https://t.me/+LCxWqCT2H9QxMjA0" target="_blank" rel='noreferrer'>
           <Image src={telegram} alt="telegram" className="hover:cursor-pointer" />
+          </a>
         </div>
       </div>
     </div>
