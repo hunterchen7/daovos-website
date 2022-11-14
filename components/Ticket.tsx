@@ -40,9 +40,8 @@ const Ticket = (props: any): JSX.Element => {
           <h1 className="text-3xl leading-loose">{title}</h1>
           <button
             onClick={() => claim(price)}
-            className="text-3xl leading-loose"
-          >
-            click here to BUY TICKET!!!
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full margin-bottom:15px">
+            Purchase Ticket
           </button>
           <div>{description}</div>
         </div>

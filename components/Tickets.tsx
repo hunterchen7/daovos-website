@@ -70,43 +70,35 @@ const Tickets = (): JSX.Element => {
             title="DAO Lobbyist"
             price="100 USDC"
             totalAvailable="5000"
-            description="You think what those crazy kids in Davos are doing is important and you want to be part of it. You
-           can’t take part in person but that doesn’t mean you’re not going to be part of the action. Lobbyists receive non-fungible
-            proof of their support for DAOVOS at genesis, and access to any DAOVOS metaverse events in 2023."
+            description="Support DAOVOS. Lobbyists receive non-fungible proof of their support for DAOVOS at genesis, and access to any DAOVOS metaverse events in 2023."
           />
           <Ticket
             claim={claim}
             title="Founding Member"
             price="1,300 USDC"
             totalAvailable="100"
-            description="You believe what those crazy kids in Davos are doing is important and you want to be part of it. Individuals
-           receive a single ticket to Davos 2023, and non-fungible evidence that they are amongst the founding members of DAOVOS DAO."
+            description="Individuals receive a single ticket to Davos 2023"
           />
           <Ticket
             claim={claim}
             title="Founding Angel"
             price="5,000 USDC"
             totalAvailable="25"
-            description="You’re ‘just’ one person or a small DAO with a vision, but you believe that what DAOVOS DAO is building 
-          has an important role to play in bringing DAOs and decentralised culture to the forefront of human development. 
-          You want to support the cause beyond the price of an individual ticket. Your name will go on the ‘Wall of Fame’ 
-          of founding angels of DAOVOS DAO."
+            description="You want to support the cause beyond the price of an individual ticket?"
           />
           <Ticket
             claim={claim}
             title="Founding Organisation"
             price="25,000 USDC"
             totalAvailable="12"
-            description="placeholder text"
+            description="Please reach out to us at hello@daovos.global to discuss your interest in becoming a founding organisation."
           />
           <Ticket
             claim={claim}
             title="Partner"
             price="80,000 USDC"
             totalAvailable="2"
-            description="We’re excited to offer two spaces as full partners on DAOVOS
-           inaugural event in 2023. Our partners will have premium full size logo placement,
-            your own dedicated area in our event space, and prominent placement in media and PR around the DAOVOS event."
+            description="Please reach out to us at hello@daovos.global to discuss your interest in becoming a partner organisation."
           />
         </div>
       </div>
