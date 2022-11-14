@@ -32,7 +32,7 @@ const Agenda = (): JSX.Element => {
         <div className="text-5xl self-center text-center my-8">
           <span className="font-bold">Catalyzing</span> the DAOVOS <span className="font-bold">mission</span> and <span className="font-bold">community</span>
         </div>
-        <div className="flex flex-col justify-center text-center self-center items-center text-2xl pb-32 lg:pb-80 bg-[url('../public/BALL.svg')] border-b-2 border-black">
+        <div className="font-nunito flex flex-col justify-center text-center self-center items-center text-2xl pb-32 lg:pb-80 bg-[url('../public/BALL.svg')] border-b-2 border-black">
           <p>Workshops on the DAOVOS DAO mission and governance DAOversity; Diversity, inclusion, equity and accessibility</p>
           <br/>
           <p>DAO governance, legal structures and taxation</p>
