@@ -123,7 +123,7 @@ const Team = (): JSX.Element => {
   return (
     <div className="flex flex-col items-center w-full bg-yellowGreen border border-black mb-12">
       <h1 className="text-4xl lg:text-8xl mx-6 bg-white p-6 lg:p-12 border-x border-b border-black mb-3" id="team">The Team</h1>
-      <div className="grid grid-cols-1 grid-flow-row items-center md:grid-cols-2 lg:grid-cols-3 gap-10 mx-6 md:mx-10 lg:mx-16">
+      <div className="grid grid-cols-1 grid-flow-row items-center md:grid-cols-2 lg:grid-cols-3 gap-10 mx-6 md:mx-10 lg:mx-16 mb-4">
         <TeamMember
           name="Isla Munro"
           title="Organisation Team"
@@ -203,8 +203,7 @@ const Team = (): JSX.Element => {
           linkedin="https://www.linkedin.com/in/drmaraharvey/"  
           twitter="https://twitter.com/DrMaraHarvey"
         />
-
-        </div>
+      </div>
       <div className="w-[80vw] lg:w-[95.75vw] text-center bg-white p-6 mt-4 border-black border flex flex-col gap-4 mb-8 md:mb-16">
         <div className="font-nunito">
           Reach out @

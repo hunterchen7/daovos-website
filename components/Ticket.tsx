@@ -10,11 +10,15 @@ import {
 } from '@thirdweb-dev/react';
 import { ChainId } from '@thirdweb-dev/sdk';
 
+import Image from 'next/image';
+
+const blankSpace = ' ';
+
 const Ticket = (props: any): JSX.Element => {
   const address = useAddress();
-  const [errorMessage, setErrorMessage] = useState('');
+  const [status, setStatus] = useState(blankSpace);
   const [ticketOpen, setTicketOpen] = useState(false);
-  const { title, price, description, image } = props;
+  const { title, price, description, image, ticketsReceived, votes, totalAvailable } = props;
 
   //const connectWithMetamask = useMetamask();
   //const disconnectWallet = useDisconnect();
@@ -31,7 +35,7 @@ const Ticket = (props: any): JSX.Element => {
     console.log(JSON.stringify(nftPrice));
     if (!address) {
       //connectWithMetamask();
-      alert('Please connect your wallet befor conducting any transaction!');
+      setStatus('Please connect your wallet first.')
       return;
     }
 
@@ -83,18 +87,37 @@ const Ticket = (props: any): JSX.Element => {
         </div>
       </div>
       {ticketOpen && (
-        <div className="peer fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white font-nunito p-4 sm:p-10 rounded-3xl border border-2 z-[101] ease-in-out duration-100">
+        <div className="peer fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white font-nunito p-4 sm:p-10 rounded-3xl border border-2 z-[101] ease-in-out duration-100 w-[95vw] sm:w-[50%]">
           <div className="flex flex-col sm:flex-row justify-between gap-2 mb-3 sm:m-0">
             <h1 className="text-3xl sm:leading-loose">{title}</h1>
-            <ConnectWallet />
+            <div className='rounded-full overflow-hidden border-2 border-black flex flex-col justify-center bg-yellowGreen h-14'>
+              <ConnectWallet accentColor="#E2FE8B" />
+            </div>
           </div>
-          <div>
-            <div>{description}</div>
-            <button
-              onClick={() => claim(price)}
-              className="bg-blue-500 hover:bg-blue-700 ease-in-out duration-150 text-white font-bold py-2 px-4 rounded-full margin-bottom:15px">
-              Purchase Ticket
-            </button>
+          <div className='flex flex-col sm:flex-row my-3 gap-3'>
+            <div className="flex flex-col justify-between gap-3 md:w-1/2 text-lg">
+              <div className='flex flex-col gap-3'>
+                <div>{description}</div>
+                <div className='flex flex-col'>
+                  <div>Price: <span className="font-bold">{price}</span></div>
+                  <div><span className="font-bold">{totalAvailable}</span> tickets available</div>
+                </div>
+                <div className='flex flex-col'>
+                  You will receive:
+                  <div><span className="font-bold">{ticketsReceived}</span> ticket(s) for DAOVOS 2023</div>
+                  <div><span className="font-bold">{votes}</span> votes in the DAOVOS DAO Genesis</div>
+                  <div>1 <span className="font-bold">{title} NFT</span></div>
+                </div>
+              </div>
+              <button
+                onClick={() => claim(price)}
+                className={`bg-yellowGreen border-2 border-black text-black hover:bg-lime-400 ease-in-out duration-150 text-white font-bold py-2 px-4 rounded-full margin-bottom:15px ${title == "Partner" || title == "Founding Organisation" ? 'hidden' : ''} w-3/4 self-center`}>
+                Purchase Ticket
+              </button>
+            </div>
+            <div className='md:w-1/2 flex justify-center'>
+              <Image src={image} alt={title} objectFit={'cover'} layout={'responsive'} placeholder={'blur'} />
+            </div>
           </div>
         </div>
       )}
