@@ -87,7 +87,7 @@ const Ticket = (props: any): JSX.Element => {
         </div>
       </div>
       {ticketOpen && (
-        <div className="peer fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white font-nunito p-4 sm:p-10 rounded-3xl border border-2 z-[101] ease-in-out duration-100 w-[95vw] sm:w-[50%]">
+        <div className="peer fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white font-nunito p-4 sm:p-10 rounded-3xl border border-2 z-[101] ease-in-out duration-100 w-[95vw] sm:w-[50%] overflow-y-scroll md:overflow-hidden max-h-[60%]">
           <div className="flex flex-col sm:flex-row justify-between gap-2 mb-3 sm:m-0">
             <h1 className="text-3xl sm:leading-loose">{title}</h1>
             <div className='rounded-full overflow-hidden border-2 border-black flex flex-col justify-center bg-yellowGreen h-14'>
@@ -115,7 +115,7 @@ const Ticket = (props: any): JSX.Element => {
                 Purchase Ticket
               </button>
             </div>
-            <div className='md:w-1/2 flex justify-center'>
+            <div className='md:w-1/2'>
               <Image src={image} alt={title} objectFit={'cover'} layout={'responsive'} placeholder={'blur'} />
             </div>
           </div>
