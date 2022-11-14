@@ -133,8 +133,8 @@ const Team = (): JSX.Element => {
           stage VC fund investing in CEE & Baltics and has worked in and around finance and impact for the past 10 years. She's passionate about innovating on financial models 
           and systems, and takes an interest in organisation design, mental health, future of work, in particular web3 models for impact. Isla is also an OG at Bankless DAO and Fight Club VC, 
           and on the multi-sig for the Expansion Punks DAO."
-          linkedin="www.linkedin.com/in/islamunro"
-          twitter="www.twitter.com/0xisla"
+          linkedin="https://www.linkedin.com/in/islamunro"
+          twitter="https://www.twitter.com/0xisla"
           
         />
         <TeamMember
