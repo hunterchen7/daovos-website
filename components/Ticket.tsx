@@ -1,12 +1,58 @@
 import { useState } from 'react';
+import {
+  useAddress,
+  useDisconnect,
+  useMetamask,
+  useContract,
+  useNetwork,
+  useNetworkMismatch,
+  ConnectWallet,
+} from '@thirdweb-dev/react';
+import { ChainId } from '@thirdweb-dev/sdk';
 
 const Ticket = (props: any): JSX.Element => {
+  const address = useAddress();
   const [ticketOpen, setTicketOpen] = useState(false);
-  const { claim, title, price, description } = props;
+  const { title, price, description, image } = props;
+
+  //const connectWithMetamask = useMetamask();
+  //const disconnectWallet = useDisconnect();
+  const isMismatch = useNetworkMismatch();
+  const [, switchNetwork] = useNetwork();
+
+  //const nftDrop =
+  const { contract } = useContract(
+    '0x522f40C6F07be79be9bB5cCfE76a56A90f642A88',
+    'nft-drop'
+  );
+
+  async function claim(nftPrice: any) {
+    console.log(JSON.stringify(nftPrice));
+    if (!address) {
+      //connectWithMetamask();
+      alert('Please connect your wallet befor conducting any transaction!');
+      return;
+    }
+
+    if (isMismatch) {
+      switchNetwork?.(ChainId.Goerli);
+      return;
+    }
+    try {
+      if (nftPrice == '100 USDC') {
+        alert('Minting $100 NFT');
+        const tx = await contract?.claimTo(address, 1);
+        alert('Successfully minted');
+      } else {
+        alert('NFT for this category is not available yet');
+      }
+    } catch (error: any) {
+      alert(error?.message);
+    }
+  }
+
   return (
-    <div
-      
-    >
+    <div>
       <div
         onClick={() => setTicketOpen(true)}
         className="flex justify-center self-center text-center hover:cursor-pointer"
@@ -36,21 +82,29 @@ const Ticket = (props: any): JSX.Element => {
         </div>
       </div>
       {ticketOpen && (
-        <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white font-nunito p-10 rounded-3xl border border-2 z-[101] ease-in-out duration-100">
-          <h1 className="text-3xl leading-loose">{title}</h1>
-          <button
-            onClick={() => claim(price)}
-            className="text-3xl leading-loose"
-          >
-            click here to BUY TICKET!!!
-          </button>
-          <div>{description}</div>
+        <div className="peer fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white font-nunito p-4 sm:p-10 rounded-3xl border border-2 z-[101] ease-in-out duration-100">
+          <div className="flex flex-col sm:flex-row justify-between gap-2 mb-3 sm:m-0">
+            <h1 className="text-3xl sm:leading-loose">{title}</h1>
+            <ConnectWallet />
+          </div>
+          <div>
+            <div>{description}</div>
+            <button
+              onClick={() => claim(price)}
+              className="text-3xl leading-loose"
+            >
+              click here to BUY TICKET!!!
+            </button>            
+          </div>
+          <div>
+            
+          </div>
         </div>
       )}
       <div
-        className={`fixed top-0 left-0 w-full h-full backdrop-blur-sm ${
+        className={`fixed top-0 left-0 w-full h-full backdrop-blur-[2px] hover:backdrop-blur-[5px] peer-hover:backdrop-blur-[5px] ${
           !ticketOpen ? 'hidden' : ''
-        } z-[100] duration-100 ease-in-out`}
+        } z-[100] duration-300 ease-in-out`}
         onClick={() => setTicketOpen(false)}
       ></div>{' '}
       {/* backdrop for ticket window */}

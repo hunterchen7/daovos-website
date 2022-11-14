@@ -59,7 +59,7 @@ const Team = (): JSX.Element => {
     return (
       <div className="flex flex-col justify-start bg-white border border-black my-3 md:mx-3 py-2 h-full">
         <div className="flex justify-center mx-14 md:mx-24 lg:mx-36 my-6 bg-black rounded-full">
-          <div className="relative rounded-full overflow-hidden z-0">
+          <div className="relative w-full h-full rounded-full overflow-hidden z-0">
             <Image
               src={image}
               objectFit={'cover'}
@@ -93,7 +93,7 @@ const Team = (): JSX.Element => {
   };
 
   return (
-    <div className="flex flex-col items-center w-full bg-[#E2FE8B] border border-black mb-12">
+    <div className="flex flex-col items-center w-full bg-yellowGreen border border-black mb-12">
       <h1 className="text-4xl lg:text-8xl mx-6 bg-white p-6 lg:p-12 border-x border-b border-black mb-3" id="team">The Team</h1>
       <div className="grid grid-cols-1 grid-flow-row items-center md:grid-cols-2 lg:grid-cols-3 gap-10 mx-6 md:mx-10 lg:mx-16">
         <TeamMember

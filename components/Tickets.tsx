@@ -54,14 +54,15 @@ const Tickets = (): JSX.Element => {
   }
 
   return (
-    <div className="w-[97vw] -mt-12 lg:-mt-48 pb-8 mb-8 md:pb-16 md:mb-16 border-b-2 border-black z-0">
+    <div className="-mt-12 lg:-mt-48 pb-8 mb-8 md:pb-16 md:mb-16 border-b-2 border-black z-0">
       <div className="flex justify-end z-0" id="tickets">
-        <Image src="/ticket.svg" alt="TICKETS" width={1200} height={300} />
+        <div className='sm:max-w-[50%]'>
+          <Image src="/ticket.svg" alt="TICKETS" width={1200} height={300} />
+        </div>
       </div>
       <div className="flex flex-col justify-around gap-8 items-center">
         <div className="text-2xl font-semibold mt-8 md:mt-0">
           Click on any ticket to learn more
-          <ConnectWallet />
         </div>
         <div></div>
         <div className="grid grid-cols-1 grid-flow-row items-center md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10 lg:gap-14">

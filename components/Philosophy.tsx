@@ -2,7 +2,7 @@ import React from "react";
 
 const Philosophy = (): JSX.Element => {
   return (
-    <div className="bg-[#E2FF8A] mb-12 flex flex-col mb-48 sm:mb-0" id="philosophy">
+    <div className="bg-[#E2FF8A] mb-12 flex flex-col mb-48 sm:mb-16" id="philosophy">
       <div className="text-4xl md:text-5xl lg:text-7xl font-semibold self-center text-center bg-white border border-black p-6 md:px-24 m-3 md:m-0">
         Our Philosophy
       </div>
