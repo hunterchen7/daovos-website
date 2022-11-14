@@ -70,7 +70,7 @@ const Tickets = (): JSX.Element => {
             title="DAO Lobbyist"
             price="100 USDC"
             totalAvailable="5000"
-            description="Support DAOVOS. Lobbyists receive non-fungible proof of their support for DAOVOS at genesis, and access to any DAOVOS metaverse events in 2023."
+            description="Support DAOVOS and access any DAOVOS metaverse events. Reach out to us if you would like to take part in the live event, we have reserved spots for lobbyists."
           />
           <Ticket
             claim={claim}
@@ -84,21 +84,21 @@ const Tickets = (): JSX.Element => {
             title="Founding Angel"
             price="5,000 USDC"
             totalAvailable="25"
-            description="You want to support the cause beyond the price of an individual ticket?"
+            description="You want to support the cause beyond the price of an individual ticket? Angels receive 3 tickets for the Event in Davos 2023"
           />
           <Ticket
             claim={claim}
             title="Founding Organisation"
             price="25,000 USDC"
             totalAvailable="12"
-            description="Please reach out to us at hello@daovos.global to discuss your interest in becoming a founding organisation."
+            description="Please reach out to us at hello@daovos.global to discuss your interest in becoming a founding organisation. Organisations receive 4 tickets for the Event in Davos 2023"
           />
           <Ticket
             claim={claim}
             title="Partner"
             price="80,000 USDC"
             totalAvailable="2"
-            description="Please reach out to us at hello@daovos.global to discuss your interest in becoming a partner organisation."
+            description="Please reach out to us at hello@daovos.global to discuss your interest in becoming a partner organisation. Partners receive 8 tickets for the event in Davos 2023"
           />
         </div>
       </div>
