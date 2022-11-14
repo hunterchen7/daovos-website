@@ -153,10 +153,10 @@ const Team = (): JSX.Element => {
            social entrepreneurs launching their ventures. Throughout her career, she has been building bridges and alliances between the public and the private sector, the old and new economy, and the analog and 
            digital world. What drives her are the questions of 'what brings people together, what keeps them engaged and how to regulate the spaces where we interact'. Aside from working with teams, traditional organisations, and DAOs, on the questions above, she’s also redefining the role of ownership and legacy in the family business.
           "
-          linkedin="https://www.linkedin.com/in/victoriacitteriosoelle/
+          linkedin="https://www.linkedin.com/in/victoriacitteriosoelle/"
         />
         <TeamMember
-          name="Esteve Clavera"
+          name="Esteve Serra Clavera"
           title="Organisation Team"
           title2="Core Contributor @ METAFACTORY / FTWDAO / NFTBERLIN / W3ST DAO"
           image={esteve}
