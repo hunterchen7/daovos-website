@@ -59,7 +59,7 @@ const Ticket = (props: any): JSX.Element => {
     }
     try {
       if (nftPrice == '100 USDC') {
-        alert('Minting $100 NFT');
+        //alert('Minting $100 NFT');
         const tx = await contract?.claimTo(address, 1);
         alert('Successfully minted');
       } else {
