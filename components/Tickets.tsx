@@ -27,7 +27,7 @@ const Tickets = (): JSX.Element => {
   return (
     <div className="-mt-12 lg:-mt-48 pb-8 mb-8 md:pb-16 md:mb-16 border-b-2 border-black z-0">
       <div className="flex justify-end z-0" id="tickets">
-        <div className='sm:max-w-[50%]'>
+        <div className="sm:max-w-[50%]">
           <Image src="/ticket.svg" alt="TICKETS" width={1200} height={300} />
         </div>
       </div>
@@ -83,7 +83,7 @@ const Tickets = (): JSX.Element => {
             votes="80,000"
             description="We’re excited to offer two spaces as full partners on DAOVOS’ inaugural event in 2023. Our partners will have premium full size logo placement, your own dedicated area in our event space, and prominent
              placement in media and PR around the DAOVOS event. Please reach out to us at hello@daovos.global to discuss your interest in becoming a partner organisation."
-             image={partner}
+            image={partner}
           />
         </div>
       </div>

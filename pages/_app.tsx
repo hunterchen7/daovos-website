@@ -4,7 +4,8 @@ import { ChainId, ThirdwebProvider } from '@thirdweb-dev/react';
 import React from 'react';
 
 // This is the chainId your dApp will work on.
-const activeChainId = ChainId.Goerli;
+const activeChainId = ChainId.Mainnet;
+//const activeChainId = ChainId.Goerli;
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
