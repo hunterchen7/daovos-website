@@ -15,7 +15,11 @@ import { ChainId } from '@thirdweb-dev/sdk';
 
 import Ticket from './Ticket';
 
-import partner from '../public/nfts/partner.jpg';
+import partner from '../public/nfts/partner.png';
+import org from '../public/nfts/forganisation.png';
+import angel from '../public/nfts/fangel.png';
+import member from '../public/nfts/fmembers.png';
+import lobbyist from '../public/nfts/daolobbyist.png';
 
 const Tickets = (): JSX.Element => {
   const address = useAddress();
@@ -44,7 +48,7 @@ const Tickets = (): JSX.Element => {
             ticketsReceived="1"
             votes="100"
             description="Support DAOVOS by becoming a DAO member. Lobbyists receive a NFT proof of their support for DAOVOS and access to any DAOVOS metaverse events. "
-            image={partner}
+            image={lobbyist}
           />
           <Ticket
             title="Founding Member"
@@ -53,7 +57,7 @@ const Tickets = (): JSX.Element => {
             ticketsReceived="1"
             votes="1,000"
             description="Individuals receive a single ticket to Davos 2023 and a founding member NFT."
-            image={partner}
+            image={member}
           />
           <Ticket
             title="Founding Angel"
@@ -62,7 +66,7 @@ const Tickets = (): JSX.Element => {
             ticketsReceived="3"
             votes="5,000"
             description="For visionary individuals and DAOs, sharing our belief that what DAOVOS DAO is building has an important role to play in bringing DAOs and decentralised culture to the forefront of human development."
-            image={partner}
+            image={angel}
           />
           <Ticket
             title="Founding Organisation"
@@ -73,7 +77,7 @@ const Tickets = (): JSX.Element => {
             description="You’re in the business of Web3 and are excited to have your company represented on the world stage at DAOVOS. Place your brand front and centre for DAOs, DAOminiaries, changemakers and leaders.
              Sponsor organisations believe in our mission and values, and want to be part of the DAOVOS family. You’ll be able to send DAOVOS delegates and we’ll feature your logo just below our partners in our marketing,
               media and PR. Please reach out to us at hello@daovos.global to discuss your interest in becoming a founding organisation."
-            image={partner}
+            image={org}
           />
           <Ticket
             title="Partner"
