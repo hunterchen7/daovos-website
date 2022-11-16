@@ -7,15 +7,15 @@ const Event = (): JSX.Element => {
     const { title, text } = props;
     return (
       <div className="">
-        <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold sm:my-6">{title}</h1>
-        <p className="text-2xl md:text-3xl lg:text-4xl font-nunito">{text}</p>
+        <h1 className="text-4xl md:text-6xl font-bold sm:my-6">{title}</h1>
+        <p className="text-xl md:text-2xl font-nunito">{text}</p>
       </div>
     )
   }  
 
   return (
     <div className="" id="event">
-      <div className="text-6xl lg:text-[200px] font-bold text-center bg-[#E2FF8A] mt-12 py-12">
+      <div className="text-6xl lg:text-8xl font-bold text-center bg-[#E2FF8A] mt-12 py-12">
         Event
       </div>
       <div className="">

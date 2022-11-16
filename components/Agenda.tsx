@@ -10,10 +10,10 @@ const Agenda = (): JSX.Element => {
         {
           number % 2 === 0 && <div className="w-[80px] lg:w-[140px]" />
         }
-        <div className="w-[80px] lg:w-[140px] h-[100px] lg:h-[185px] border-2 border-black text-center flex flex-col justify-center text-3xl md:text-6xl lg:text-9xl font-extrabold">
+        <div className="w-[80px] lg:w-[140px] h-[100px] lg:h-[185px] border-2 border-black text-center flex flex-col justify-center text-3xl md:text-6xl font-extrabold">
           {number}
         </div>
-        <div className="border-r-2 border-y-2 border-black text-center rounded-r-full flex flex-col justify-center text-xl lg:text-4xl font-bold px-4 md:px-20 lg:px-36 bg-white">
+        <div className="border-r-2 border-y-2 border-black text-center rounded-r-full flex flex-col justify-center text-xl lg:text-3xl font-bold px-4 md:px-20 lg:px-36 bg-white">
           {text}
         </div>
       </div>
@@ -25,14 +25,14 @@ const Agenda = (): JSX.Element => {
       <div className="hidden lg:flex border-t-2 border-black pb-8"/>
       <div className="text-6xl bg-[url('../public/AGENDA.svg')] text-center lg:py-8 mb-8 ml-3" />
       <div className="hidden lg:flex border-t-2 border-black"/>
-      <div className="text-6xl lg:text-[200px] font-bold text-center bg-[#E2FF8A] mt-12 py-12">
+      <div className="text-6xl lg:text-8xl font-bold text-center bg-[#E2FF8A] mt-12 py-12">
         AGENDA
       </div>
       <div className="items-center">
-        <div className="text-5xl self-center text-center my-8">
+        <div className="text-4xl md:text-6xl self-center text-center my-8">
           <span className="font-bold">Catalyzing</span> the DAOVOS <span className="font-bold">mission</span> and <span className="font-bold">community</span>
         </div>
-        <div className="font-nunito flex flex-col justify-center text-center self-center items-center text-2xl pb-32 lg:pb-80 bg-[url('../public/BALL.svg')] border-b-2 border-black">
+        <div className="font-nunito flex flex-col justify-center text-center self-center items-center text-xl md:text-2xl pb-32 lg:pb-80 bg-[url('../public/BALL.svg')] border-b-2 border-black">
           <p>Workshops on the DAOVOS DAO mission and governance DAOversity; Diversity, inclusion, equity and accessibility</p>
           <br/>
           <p>DAO governance, legal structures and taxation</p>
@@ -48,10 +48,10 @@ const Agenda = (): JSX.Element => {
           <BookYourSpot />
         </div>
       </div>
-      <div className="flex justify-center m-12">
+      <div className="flex justify-center m-12 2xl:scale-110">
         <Image src="/2030.svg" alt="OURPLAN" width={700} height={700}/>
       </div>
-      <div className="self-center text-4xl font-nunito text-center">
+      <div className="self-center text-xl md:text-3xl lg:text-4xl font-nunito text-center">
         FIVE KEY STREAMS FOR <span className="font-extrabold">DAOVOS</span> DISCUSSION
       </div>
       <div className="flex flex-col self-center gap-4 p-10 bg-[url('../public/plan_bg.svg')] bg-cover bg-no-repeat">

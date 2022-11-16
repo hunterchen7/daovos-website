@@ -18,7 +18,7 @@ export default function Home() {
       <Head>
         <title>DAOVOS™</title>
         <meta name="description" content="DAOVOS web page" />
-        <link rel="icon" href="/daovos_icon.svg" />
+        <link rel="icon" href="/favicon/favicon.ico" />
       </Head>
       <Header />
       <Daovos />
