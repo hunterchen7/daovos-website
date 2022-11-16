@@ -14,7 +14,7 @@ import Supporters from '../components/Supporters';
 
 export default function Home() {
   return (
-    <div className='mx-3'>
+    <div className='mx-3 overflow-clip'>
       <Head>
         <title>DAOVOS™</title>
         <meta name="description" content="DAOVOS web page" />
