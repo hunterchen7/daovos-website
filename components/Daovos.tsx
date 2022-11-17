@@ -19,13 +19,13 @@ const Daovos = (): JSX.Element => {
           The DAO Forum
         </h1>
         <div className="flex gap-3">
-          <a href='https://twitter.com/daovosglobal' target="_blank" rel='noreferrer'>
+          <a href='https://twitter.com/daovosglobal' target="_blank" rel='noreferrer' className='hover:bg-yellowGreen duration-150 ease-in-out rounded-full'>
           <Image src={twitter} alt="twitter" className="hover:cursor-pointer" />
           </a>
-          <a>
+          {/**<a className='hover:bg-yellowGreen duration-150 ease-in-out rounded-full'>
           <Image src={discord} alt="discord" className="hover:cursor-pointer" />
-          </a>
-          <a href="https://t.me/+LCxWqCT2H9QxMjA0" target="_blank" rel='noreferrer'>
+          </a>**/}
+          <a href="https://t.me/+LCxWqCT2H9QxMjA0" target="_blank" rel='noreferrer' className='hover:bg-yellowGreen duration-150 ease-in-out rounded-full'>
           <Image src={telegram} alt="telegram" className="hover:cursor-pointer" />
           </a>
         </div>
