@@ -156,7 +156,7 @@ const Ticket = (props: any): JSX.Element => {
                   </div>
                 </div>
               </div>
-              <div className='flex flex-col justify-center gap-2'>
+              <div className='flex flex-col justify-center gap-2 md:mx-10 lg:mx-16'>
                 <div className='text-sm text-center'>{status}</div>
                 {/*<button
                   onClick={() => claim(price)}
