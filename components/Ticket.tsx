@@ -154,17 +154,19 @@ const Ticket = (props: any): JSX.Element => {
                   </div>
                 </div>
               </div>
-              <div className='text-sm text-center'>{status}</div>
-              <button
-                onClick={() => claim(price)}
-                className={`bg-yellowGreen border-2 border-black text-black hover:bg-[#D7FE63] ease-in-out duration-150 font-bold py-2 px-4 rounded-full  ${
-                  title == 'Partner' || title == 'Founding Organisation'
-                    ? 'hidden'
-                    : ''
-                } w-3/4 self-center`}
-              >
-                Purchase Ticket
-              </button>
+              <div className='flex flex-col justify-center gap-2'>
+                <div className='text-sm text-center'>{status}</div>
+                <button
+                  onClick={() => claim(price)}
+                  className={`bg-yellowGreen border-2 border-black text-black hover:bg-[#D7FE63] ease-in-out duration-150 font-bold py-2 px-4 rounded-full  ${
+                    title == 'Partner' || title == 'Founding Organisation'
+                      ? 'hidden'
+                      : ''
+                  } w-3/4 self-center`}
+                >
+                  Purchase Ticket
+                </button>                
+              </div>
             </div>
             <div className="md:w-1/2">
               <Image
