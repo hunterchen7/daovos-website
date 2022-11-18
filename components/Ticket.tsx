@@ -7,6 +7,7 @@ import {
   useNetwork,
   useNetworkMismatch,
   ConnectWallet,
+  Web3Button
 } from '@thirdweb-dev/react';
 import { ChainId } from '@thirdweb-dev/sdk';
 
@@ -21,6 +22,7 @@ const Ticket = (props: any): JSX.Element => {
   const [ticketOpen, setTicketOpen] = useState(false);
   const [ticketPurchaseOpen, setTicketPurchaseOpen] = useState(false);
   const {
+    nftIndex,
     title,
     price,
     description,
@@ -156,7 +158,7 @@ const Ticket = (props: any): JSX.Element => {
               </div>
               <div className='flex flex-col justify-center gap-2'>
                 <div className='text-sm text-center'>{status}</div>
-                <button
+                {/*<button
                   onClick={() => claim(price)}
                   className={`bg-yellowGreen border-2 border-black text-black hover:bg-[#D7FE63] ease-in-out duration-150 font-bold py-2 px-4 rounded-full  ${
                     title == 'Partner' || title == 'Founding Organisation'
@@ -165,7 +167,14 @@ const Ticket = (props: any): JSX.Element => {
                   } w-3/4 self-center`}
                 >
                   Purchase Ticket
-                </button>                
+                </button>*/}
+                <Web3Button
+                  accentColor='#E2FE8B'
+                  contractAddress = '0xdC6c0515fA6f4E6Dab39560E21fb40EF5b348494'
+                  action={(contract: { claim: (arg0: any, arg1: any) => any; }) => contract.claim(nftIndex, 1)}
+                >
+                  Purchase Ticket
+                </Web3Button>
               </div>
             </div>
             <div className="md:w-1/2">

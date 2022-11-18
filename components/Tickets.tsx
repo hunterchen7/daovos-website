@@ -37,6 +37,7 @@ const Tickets = (): JSX.Element => {
         <div></div>
         <div className="grid grid-cols-1 grid-flow-row items-center md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10 lg:gap-14">
           <Ticket
+            nftIndex={0}
             title="DAO Lobbyist"
             price="100"
             totalAvailable="5000"
@@ -46,6 +47,7 @@ const Tickets = (): JSX.Element => {
             image={lobbyist}
           />
           <Ticket
+            nftIndex={1}
             title="Founding Member"
             price="1,000"
             totalAvailable="100"
@@ -55,6 +57,7 @@ const Tickets = (): JSX.Element => {
             image={member}
           />
           <Ticket
+            nftIndex={2}
             title="Founding Angel"
             price="5,000"
             totalAvailable="25"
