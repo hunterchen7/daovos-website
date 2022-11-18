@@ -12,7 +12,7 @@ import {
 import { ChainId } from '@thirdweb-dev/sdk';
 
 import Image from 'next/image';
-import TicketPurchase from './TicketPurchase';
+// import TicketPurchase from './TicketPurchase';
 
 const blankSpace = ' ';
 
@@ -124,9 +124,9 @@ const Ticket = (props: any): JSX.Element => {
         <div className="peer fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white font-nunito p-4 sm:p-10 rounded-3xl border border-2 z-[101] ease-in-out duration-100 w-[95vw] md:w-[50%] overflow-auto max-h-[80%]">
           <div className="flex flex-col sm:flex-row justify-between gap-2 mb-3 sm:m-0">
             <h1 className="text-3xl sm:leading-loose">{title}</h1>
-            <div className="rounded-full overflow-hidden border-2 border-black flex flex-col justify-center bg-yellowGreen h-14">
+            {/*<div className="rounded-full overflow-hidden border-2 border-black flex flex-col justify-center bg-yellowGreen h-14">
               <ConnectWallet accentColor="#E2FE8B" />
-            </div>
+            </div>*/}
           </div>
           <div className="flex flex-col sm:flex-row my-3 gap-3">
             <div className="flex flex-col justify-between gap-3 md:w-1/2 text-lg">
@@ -157,8 +157,9 @@ const Ticket = (props: any): JSX.Element => {
                 </div>
               </div>
               <div className='flex flex-col justify-center gap-2 md:mx-10 lg:mx-16'>
+                {/*
                 <div className='text-sm text-center'>{status}</div>
-                {/*<button
+                <button
                   onClick={() => claim(price)}
                   className={`bg-yellowGreen border-2 border-black text-black hover:bg-[#D7FE63] ease-in-out duration-150 font-bold py-2 px-4 rounded-full  ${
                     title == 'Partner' || title == 'Founding Organisation'
@@ -167,14 +168,17 @@ const Ticket = (props: any): JSX.Element => {
                   } w-3/4 self-center`}
                 >
                   Purchase Ticket
-                </button>*/}
-                <Web3Button
-                  accentColor='#E2FE8B'
-                  contractAddress = '0xdC6c0515fA6f4E6Dab39560E21fb40EF5b348494'
-                  action={(contract: { claim: (arg0: any, arg1: any) => any; }) => contract.claim(nftIndex, 1)}
-                >
-                  Purchase Ticket
-                </Web3Button>
+                </button>
+                */}
+                <div className="rounded-full overflow-hidden border-2 border-black flex flex-col justify-center bg-yellowGreen h-14">
+                  <Web3Button
+                    accentColor='#E2FE8B'
+                    contractAddress = '0xdC6c0515fA6f4E6Dab39560E21fb40EF5b348494'
+                    action={(contract: { claim: (arg0: any, arg1: any) => any; }) => contract.claim(nftIndex, 1)}
+                  >
+                    Purchase Ticket
+                  </Web3Button>
+                </div>
               </div>
             </div>
             <div className="md:w-1/2">
