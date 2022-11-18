@@ -11,6 +11,7 @@ import {
 import { ChainId } from '@thirdweb-dev/sdk';
 
 import Image from 'next/image';
+import TicketPurchase from './TicketPurchase';
 
 const blankSpace = ' ';
 
@@ -18,6 +19,7 @@ const Ticket = (props: any): JSX.Element => {
   const address = useAddress();
   const [status, setStatus] = useState(blankSpace);
   const [ticketOpen, setTicketOpen] = useState(false);
+  const [ticketPurchaseOpen, setTicketPurchaseOpen] = useState(false);
   const {
     title,
     price,
@@ -47,8 +49,10 @@ const Ticket = (props: any): JSX.Element => {
 
   useEffect(() => {
     if (isMismatch) {
-      setStatus('Wrong network connected, please switch to the correct networks.');
+      setStatus('Wrong network connected, please switch to the correct network.');
       switchNetwork?.(ChainId.Mainnet);
+    } else {
+      setStatus(blankSpace);
     }
   }, [address, isMismatch, switchNetwork]);
 
@@ -56,7 +60,7 @@ const Ticket = (props: any): JSX.Element => {
     console.log(JSON.stringify(nftPrice));
     if (!address) {
       //connectWithMetamask();
-      setStatus('Please connect your wallet first.');
+      setStatus('Please connect your wallet before minting.');
       return;
     }
 
@@ -64,18 +68,23 @@ const Ticket = (props: any): JSX.Element => {
       switchNetwork?.(ChainId.Mainnet);
       return;
     }
+
     try {
       //console.log(nftPrice);
       if (nftPrice == '100') {
         //alert('Minting $100 NFT');
-        const tx = await contract?.claimTo(address,0, 1);
-        alert('Successfully minted');
+        const tx = await contract?.claim(0,1);
+        console.log('transaction:', tx);
+      } else if (nftPrice == '1,000') {
+        const tx = await contract?.claim(1,1);
+      } else if (nftPrice == '5,000') {
+        const tx = await contract?.claim(2,1);
       } else {
         alert('NFT for this category is not available yet');
       }
     } catch (error: any) {
       //console.log(error?.message);
-      alert(error?.message);
+      console.error(error?.message);
     }
   }
 
@@ -85,7 +94,7 @@ const Ticket = (props: any): JSX.Element => {
         onClick={() => setTicketOpen(true)}
         className="flex justify-center self-center text-center hover:cursor-pointer"
       >
-        <div className="w-[90px] h-[130px] md:w-[120px] md:h-[160px] bg-[#E2FF8A] text-2xl font-semibold flex flex-col justify-center text-center border border-black">
+        <div className="w-[90px] h-[130px] md:w-[120px] md:h-[160px] bg-yellowGreen peer/price hover:bg-[#D7FE63] ease-in-out duration-100  text-2xl font-semibold flex flex-col justify-center text-center border border-black">
           $ {price}
         </div>
         <div className="w-[120px] md:w-[150px] flex flex-col justify-center">
@@ -93,7 +102,7 @@ const Ticket = (props: any): JSX.Element => {
             {title}
           </div>
         </div>
-        <div className="w-[100px] h-[130px] md:h-[160px] md:w-[100px] bg-[#E2FF8A] flex flex-col justify-center border border-black">
+        <div className="w-[100px] h-[130px] md:h-[160px] md:w-[100px] bg-yellowGreen peer-hover/price:bg-[#D7FE63] hover:bg-[#D7FE63] ease-in-out duration-100 flex flex-col justify-center border border-black">
           <svg
             width="87"
             height="39"
@@ -145,9 +154,10 @@ const Ticket = (props: any): JSX.Element => {
                   </div>
                 </div>
               </div>
+              <div className='text-sm text-center'>{status}</div>
               <button
                 onClick={() => claim(price)}
-                className={`bg-yellowGreen border-2 border-black text-black hover:bg-lime-400 ease-in-out duration-150 hover:text-white font-bold py-2 px-4 rounded-full margin-bottom:15px ${
+                className={`bg-yellowGreen border-2 border-black text-black hover:bg-[#D7FE63] ease-in-out duration-150 font-bold py-2 px-4 rounded-full  ${
                   title == 'Partner' || title == 'Founding Organisation'
                     ? 'hidden'
                     : ''
@@ -174,6 +184,9 @@ const Ticket = (props: any): JSX.Element => {
         } z-[100] duration-300 ease-in-out`}
         onClick={() => setTicketOpen(false)}
       ></div>{' '}
+      {ticketPurchaseOpen && (
+        <TicketPurchase setTicketPurchaseOpen={setTicketPurchaseOpen} claim={claim} price={price} />
+      )}
       {/* backdrop for ticket window */}
     </div>
   );
