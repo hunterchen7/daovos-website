@@ -26,7 +26,7 @@ export default function Home() {
       <Daovos2 />
       <Event />
       <Agenda />
-      <Tickets />
+      {/*<Tickets />*/}
       <Team />
       <Philosophy />
     </div>

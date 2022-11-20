@@ -51,8 +51,8 @@ const Header = (): JSX.Element => {
         <HeaderButton to="daovos" text="DAOVOS" />
         <HeaderButton to="event" text="Event" />
         <HeaderButton to="agenda" text="Agenda" />
-        {/*<HeaderButton to="event" text="Event"/>*/}
-        <HeaderButton to="tickets" text="Tickets" />
+        {/*<HeaderButton to="event" text="Event"/>
+        <HeaderButton to="tickets" text="Tickets" />*/}
         <HeaderButton to="team" text="Team" />
         <HeaderButton to="philosophy" text="Philosophy" />
       </div>
@@ -64,14 +64,14 @@ const Header = (): JSX.Element => {
         <HeaderButton to="daovos" text="DAOVOS" />
         <HeaderButton to="event" text="Event" />
         <HeaderButton to="agenda" text="Agenda" />
-        {/*<HeaderButton to="event" text="Event"/>*/}
-        <HeaderButton to="tickets" text="Tickets" />
+        {/*<HeaderButton to="event" text="Event"/>
+        <HeaderButton to="tickets" text="Tickets" />*/}
         <HeaderButton to="team" text="Team" />
         <HeaderButton to="philosophy" text="Philosophy" />
       </div>
-      <div className="hidden lg:flex">
+      {/*<div className="hidden lg:flex">
         <BookYourSpot />
-      </div>
+      </div>*/}
     </header>
   );
 };
