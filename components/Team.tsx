@@ -127,7 +127,7 @@ const Team = (): JSX.Element => {
         <TeamMember
           name="Isla Munro"
           title="Organisation Team"
-          title2="Founder @ FTW DAO Core Contributor @ BANKLESS DAO / EXPANSION DAO"
+          title2="Founder @ FTW DAO | Contributor @ BANKLESS DAO / EXPANSION DAO"
           //image={isla}
           desc="​​Isla is the co-founder of FTW DAO, a social and venture DAO ecosystem with the goal of funding diverse founders globally. She was previously part of a seed 
           stage VC fund investing in CEE & Baltics and has worked in and around finance and impact for the past 10 years. She's passionate about innovating on financial models 
@@ -140,7 +140,7 @@ const Team = (): JSX.Element => {
         <TeamMember
           name="Estefania Ochoa"
           title="Organisation Team"
-          title2="Core Contributor @ HER DAO LATAM / CABIN DAO / INK DAO"
+          title2="Contributor @ HER DAO LATAM / CABIN DAO / INK DAO"
           //image={estefania}
           desc="Estefania has over 10+ years in community building and event planning. She began her blockchain journey in 2021 while working at bG gallery, and began onboarding artists to NFTs.
           Today she is able to use these skills as she facilitates developer experiences and programs. Estefanía Ochoa is an advocate for education and accessibility in the blockchain ecosystem. 
@@ -186,7 +186,7 @@ const Team = (): JSX.Element => {
         <TeamMember
           name="Esteve Serra Clavera"
           title="Organisation Team"
-          title2="Core Contributor @ METAFACTORY / FTWDAO / NFTBERLIN / W3ST DAO"
+          title2="Contributor @ METAFACTORY / FTWDAO / NFTBERLIN / W3ST DAO"
           //image={esteve}
           desc="Advisor to W3st DAO, member of FTW DAO. Esteve is an experienced project manager and was part of the organising team of NFT Berlin. 
           He believes web3 has the potential to improve humankind current challenges massively onboarding non-web3 native and cross-relating physical and digital realities."
