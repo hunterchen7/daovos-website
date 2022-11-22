@@ -20,7 +20,7 @@ const Ticket = (props: any): JSX.Element => {
   const address = useAddress();
   const [status, setStatus] = useState(blankSpace);
   const [ticketOpen, setTicketOpen] = useState(false);
-  const [ticketPurchaseOpen, setTicketPurchaseOpen] = useState(false);
+  // const [ticketPurchaseOpen, setTicketPurchaseOpen] = useState(false);
   const {
     nftIndex,
     title,
@@ -199,9 +199,9 @@ const Ticket = (props: any): JSX.Element => {
         } z-[100] duration-300 ease-in-out`}
         onClick={() => setTicketOpen(false)}
       ></div>{' '}
-      {ticketPurchaseOpen && (
+      {/*ticketPurchaseOpen && (
         <TicketPurchase setTicketPurchaseOpen={setTicketPurchaseOpen} claim={claim} price={price} />
-      )}
+      )*/}
       {/* backdrop for ticket window */}
     </div>
   );
