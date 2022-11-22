@@ -174,7 +174,7 @@ const Ticket = (props: any): JSX.Element => {
                   <Web3Button
                     accentColor='#E2FE8B'
                     contractAddress = '0xdC6c0515fA6f4E6Dab39560E21fb40EF5b348494'
-                    action={(contract: { claim: (arg0: any, arg1: any) => any; }) => contract.claim(nftIndex, 1)}
+                    action={(contract: any) => contract.claim(nftIndex, 1)}
                   >
                     Purchase Ticket
                   </Web3Button>
