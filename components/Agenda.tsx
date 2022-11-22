@@ -45,7 +45,7 @@ const Agenda = (): JSX.Element => {
           <br/>
           <p>Regenerative finance</p>
           <br/>
-          <BookYourSpot />
+          {/*<BookYourSpot />*/}
         </div>
       </div>
       <div className="flex justify-center m-12 2xl:scale-110">
