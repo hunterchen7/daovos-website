@@ -43,7 +43,7 @@ const Tickets = (): JSX.Element => {
             totalAvailable="5000"
             ticketsReceived="1"
             votes="100"
-            description="Support DAOVOS by becoming a DAO member. Lobbyists receive a NFT proof of their support for DAOVOS and access to any DAOVOS metaverse events. "
+            description="Support the DAO Forum by becoming a DAO member. Lobbyists receive a NFT proof of their support for DAO Forum and access to any DAO Forum metaverse events. "
             image={lobbyist}
           />
           <Ticket
@@ -63,7 +63,7 @@ const Tickets = (): JSX.Element => {
             totalAvailable="25"
             ticketsReceived="3"
             votes="5,000"
-            description="For visionary individuals and DAOs, sharing our belief that what DAOVOS DAO is building has an important role to play in bringing DAOs and decentralised culture to the forefront of human development."
+            description="For visionary individuals and DAOs, sharing our belief that what the DAO Forum is building has an important role to play in bringing DAOs and decentralised culture to the forefront of human development."
             image={angel}
           />
           <Ticket
@@ -72,8 +72,8 @@ const Tickets = (): JSX.Element => {
             totalAvailable="12"
             ticketsReceived="5"
             votes="25,000"
-            description="You’re in the business of Web3 and are excited to have your company represented on the world stage at DAOVOS. Place your brand front and centre for DAOs, DAOminiaries, changemakers and leaders.
-             Sponsor organisations believe in our mission and values, and want to be part of the DAOVOS family. You’ll be able to send DAOVOS delegates and we’ll feature your logo just below our partners in our marketing,
+            description="You’re in the business of Web3 and are excited to have your company represented on the world stage at the DAO Forum. Place your brand front and centre for DAOs, DAOminiaries, changemakers and leaders.
+             Sponsor organisations believe in our mission and values, and want to be part of the DAO Forum family. You’ll be able to send DAO Forum delegates and we’ll feature your logo just below our partners in our marketing,
               media and PR. Please reach out to us at hello@daovos.global to discuss your interest in becoming a founding organisation."
             image={org}
           />
@@ -83,8 +83,8 @@ const Tickets = (): JSX.Element => {
             totalAvailable="2"
             ticketsReceived="8"
             votes="80,000"
-            description="We’re excited to offer two spaces as full partners on DAOVOS’ inaugural event in 2023. Our partners will have premium full size logo placement, your own dedicated area in our event space, and prominent
-             placement in media and PR around the DAOVOS event. Please reach out to us at hello@daovos.global to discuss your interest in becoming a partner organisation."
+            description="We’re excited to offer two spaces as full partners on the DAO Forum’ inaugural event in 2023. Our partners will have premium full size logo placement, your own dedicated area in our event space, and prominent
+             placement in media and PR around the DAO Forum event. Please reach out to us at hello@daovos.global to discuss your interest in becoming a partner organisation."
             image={partner}
           />
         </div>

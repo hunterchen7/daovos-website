@@ -10,7 +10,7 @@ const Daovos = (): JSX.Element => {
       <Image src={daovos_icon} alt="daovos_icon" className="md:scale-125 pb-16 md:pb-0"/>
       <div className="-mt-32 lg:mt-0 flex flex-col gap-3 justify-center">
         <h1 className="font-semibold text-8xl">
-          DAOVOS
+          DAO Forum
         </h1>
         <h1 className="font-nunito text-3xl">
           Davos, Switzerland, January 2023

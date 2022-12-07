@@ -145,11 +145,11 @@ const Ticket = (props: any): JSX.Element => {
                   You will receive:
                   <div>
                     <span className="font-bold">{ticketsReceived}</span>{' '}
-                    ticket(s) for DAOVOS 2023
+                    ticket(s) for the DAO Forum 2023
                   </div>
                   <div>
                     <span className="font-bold">{votes}</span> votes in the
-                    DAOVOS DAO Genesis
+                    DAO Forum DAO Genesis
                   </div>
                   <div>
                     1 <span className="font-bold">{title} NFT</span>
