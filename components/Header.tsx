@@ -23,7 +23,7 @@ const Header = (): JSX.Element => {
 
   return (
     <header className="flex flex-row self-center items-center justify-between py-2 md:gap-4 sticky top-0 bg-white border-b-2 border-black px-3 -mx-3 sm:mx-0 z-20">
-      <h1 className="font-extrabold text-4xl lg:text-5xl">DAOVOS</h1>
+      <h1 className="font-extrabold text-4xl lg:text-5xl">DAO Forum</h1>
       <div
         className={`flex lg:hidden cursor-pointer select-none ease-in-out duration-200 hover:bg-dark-label p-2 place-items-center place-content-center border-menu-dropdown-border border-2 w-14 h-14 rounded-full ${
           menuDropped ? 'bg-[rgba(0,0,0,0.6)]' : ''
@@ -48,7 +48,7 @@ const Header = (): JSX.Element => {
       </div>
 
       <div className="hidden lg:flex flex-row self-center justify-center font-nunito">
-        <HeaderButton to="daovos" text="DAOVOS" />
+        <HeaderButton to="daovos" text="DAO Forum" />
         <HeaderButton to="event" text="Event" />
         <HeaderButton to="agenda" text="Agenda" />
         {/*<HeaderButton to="event" text="Event"/>
@@ -61,7 +61,7 @@ const Header = (): JSX.Element => {
           menuDropped ? 'lg:hidden' : 'hidden'
         }`}
       >
-        <HeaderButton to="daovos" text="DAOVOS" />
+        <HeaderButton to="daovos" text="DAO Forum" />
         <HeaderButton to="event" text="Event" />
         <HeaderButton to="agenda" text="Agenda" />
         {/*<HeaderButton to="event" text="Event"/>
