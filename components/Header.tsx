@@ -48,7 +48,7 @@ const Header = (): JSX.Element => {
       </div>
 
       <div className="hidden lg:flex flex-row self-center justify-center font-nunito">
-        <HeaderButton to="daovos" text="DAO Forum" />
+        <HeaderButton to="daovos" text="DAOVOZ" />
         <HeaderButton to="event" text="Event" />
         <HeaderButton to="agenda" text="Agenda" />
         {/*<HeaderButton to="event" text="Event"/>
@@ -61,7 +61,7 @@ const Header = (): JSX.Element => {
           menuDropped ? 'lg:hidden' : 'hidden'
         }`}
       >
-        <HeaderButton to="daovos" text="DAO Forum" />
+        <HeaderButton to="daovos" text="DAOVOZ" />
         <HeaderButton to="event" text="Event" />
         <HeaderButton to="agenda" text="Agenda" />
         {/*<HeaderButton to="event" text="Event"/>

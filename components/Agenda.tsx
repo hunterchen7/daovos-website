@@ -22,8 +22,8 @@ const Agenda = (): JSX.Element => {
 
   return (
     <div className="mt-8" id="agenda">
-      <div className="hidden lg:flex border-t-2 border-black pb-8"/>
-      <div className="text-6xl bg-[url('../public/AGENDA.svg')] text-center lg:py-8 mb-8 ml-3" />
+      <div className="hidden lg:flex border-t-2 border-black pb-4"/>
+      <div className="bg-[url('../public/AGENDA.svg')] text-center lg:py-8 mb-3 scale-75 -mx-96" />
       <div className="hidden lg:flex border-t-2 border-black"/>
       <div className="text-6xl lg:text-8xl font-bold text-center bg-[#E2FF8A] mt-12 py-12">
         AGENDA

@@ -10,10 +10,14 @@ const Daovos = (): JSX.Element => {
       <Image src={daovos_icon} alt="daovos_icon" className="md:scale-125"/>
       <div className="flex flex-col gap-3 justify-center">
         <h1 className="font-semibold text-8xl">
-          DAO Forum
+          DAOVOZ
         </h1>
         <h1 className="font-nunito text-3xl">
-          Davos, Switzerland, January 2023
+          CV Labs Networking Lounge
+          <br/>
+          Davos, Switzerland
+          <br/>
+          January 16, 2023 1:00-4:00 PM
         </h1>
         <h1 className="font-nunito text-4xl font-semibold">
           The DAO Forum

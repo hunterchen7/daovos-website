@@ -16,8 +16,8 @@ export default function Home() {
   return (
     <div className='mx-3 overflow-clip'>
       <Head>
-        <title>DAO Forum™</title>
-        <meta name="description" content="DAO Forum web page" />
+        <title>DAOVOZ™</title>
+        <meta name="description" content="DAOVOZ web page" />
         <link rel="icon" href="/favicon/favicon.ico" />
       </Head>
       <Header />
