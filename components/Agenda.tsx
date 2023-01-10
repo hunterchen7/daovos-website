@@ -33,7 +33,7 @@ const Agenda = (): JSX.Element => {
           <b>1:05 - 1:10 PM</b> Welcome
         </li>
         <li>
-          <b>1:10 - 1:30 PM</b> Web3's climate impact, can it help us get to net zero?
+          <b>1:10 - 1:30 PM</b> Web3&apos;s climate impact, can it help us get to net zero?
           <ul className="list-disc text-2xl mx-12">
             <li>Toucan Protocol</li>
             <li>Foresight Institute</li>
