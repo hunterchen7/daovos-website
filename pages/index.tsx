@@ -11,6 +11,7 @@ import Tickets from '../components/Tickets';
 import Team from '../components/Team';
 import Philosophy from '../components/Philosophy';
 import Supporters from '../components/Supporters';
+import Mission from '../components/Mission';
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
       <Daovos2 />
       <Event />
       <Agenda />
+      <Mission />
       {/*<Tickets />*/}
       <Team />
       <Philosophy />
