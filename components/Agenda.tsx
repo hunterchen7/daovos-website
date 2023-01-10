@@ -21,14 +21,14 @@ const Agenda = (): JSX.Element => {
   }
 
   return (
-    <div className="mt-8 h-screen" id="agenda">
+    <div className="mt-8" id="agenda">
       <div className="hidden lg:flex border-t-2 border-black pb-4"/>
       <div className="bg-[url('../public/AGENDA.svg')] text-center lg:py-8 mb-3 scale-75 -mx-96" />
       <div className="hidden lg:flex border-t-2 border-black"/>
       <div className="text-6xl lg:text-8xl font-bold text-center bg-[#E2FF8A] mt-12 py-12">
         AGENDA
       </div>
-      <ul className="list-none text-3xl font-nunito gap-4 my-8 w-1/2 mx-auto">
+      <ul className="list-none text-3xl font-nunito my-8 w-1/2 mx-auto space-y-4">
         <li>
           <b>1:05 - 1:10 PM</b> Welcome
         </li>
