@@ -18,9 +18,17 @@ const Supporters = (): JSX.Element => {
       <span className="px-5">OUR SUPPORTERS</span>
       <Supporter title="FTW DAO" />
       <Supporter title="DAO SUISSE" />
-      <Supporter title="ARAMID DAO" />
-      <Supporter title="NGV DAO" />
+      <Supporter title="Aramid Labs" />
+      <Supporter title="NextGenVillage Association" />
       <Supporter title="BANKLESS DAO" />
+      <Supporter title="The Foresight Institute" />
+      <Supporter title="Hyphen.Earth" />
+      <Supporter title="MAKER DAO" />
+      <Supporter title="Tokentus" />
+      <Supporter title="CV Labs" />
+      <Supporter title="Redhill.world" />
+      <Supporter title="AMX Law" />
+      <Supporter title="Diva Labs" />
     </div>
   );
 }

@@ -25,12 +25,13 @@ export default function Home() {
       <Daovos />
       <Supporters />
       <Daovos2 />
-      <Event />
+      {/*<Event />*/}
       <Agenda />
       <Mission />
       {/*<Tickets />*/}
-      <Team />
+
       <Philosophy />
+      <Team />
     </div>
   );
 }

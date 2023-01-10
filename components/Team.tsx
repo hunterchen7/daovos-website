@@ -1,8 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import isla from "../public/team_members/isla.jpeg";
+import isla from "../public/team_members/isla.jpg";
 import estefania from "../public/team_members/estefania.png";
-import mara from "../public/team_members/mara.jpeg";
 import esteve from "../public/team_members/esteve.jpeg";
 import victoria from "../public/team_members/victoria.jpeg";
 import daniel from "../public/team_members/daniel.png";
@@ -135,7 +134,7 @@ const Team = (): JSX.Element => {
         <TeamMember
           name="Isla Munro"
           title="Organisation Team"
-          title2="Founder @ FTW DAO | Contributor @ BANKLESS DAO / EXPANSION DAO"
+          title2="Founder FTW DAO | Contributor BANKLESS DAO/ EXPANSION DAO"
           image={isla}
           desc="​​Isla is the co-founder of FTW DAO, a social and venture DAO ecosystem with the goal of funding diverse founders globally. She was previously part of a seed 
           stage VC fund investing in CEE & Baltics and has worked in and around finance and impact for the past 10 years. She's passionate about innovating on financial models 
@@ -148,7 +147,7 @@ const Team = (): JSX.Element => {
         <TeamMember
           name="Estefania Ochoa"
           title="Organisation Team"
-          title2="Contributor @ HER DAO LATAM / CABIN DAO / INK DAO"
+          title2="Contributor HER DAO LATAM/ CABIN DAO/ INK DAO"
           image={estefania}
           desc="Estefania has over 10+ years in community building and event planning. She began her blockchain journey in 2021 while working at bG gallery, and began onboarding artists to NFTs.
           Today she is able to use these skills as she facilitates developer experiences and programs. Estefanía Ochoa is an advocate for education and accessibility in the blockchain ecosystem. 
@@ -160,7 +159,7 @@ const Team = (): JSX.Element => {
         <TeamMember
           name="Daniel Dohne"
           title="Organisation Team"
-          title2="Core Contributor at ARAMID DAO / NEXT GEN VILLAGE DAO / FTW DAO"
+          title2="Founder ARAMID LABS"
           image={daniel}
           desc="Daniel has a background in software engineering and has experience in web2 and web3 startups in the DeFi, ReFi and DeSci space as well as big4 companies building 
           regulatory software used at 80% of Swiss private banks, and has been working in the crypto space since 2017. He’s a passionate web3 trader and investor in future oriented 
@@ -172,7 +171,7 @@ const Team = (): JSX.Element => {
         <TeamMember
           name="Dr. Hongyang (Una) Wang"
           title="Organisation Team"
-          title2="Founding Member @ DAO SUISSE"
+          title2="Founding Member DAO SUISSE"
           image={una}
           desc="Una is a PhD student at ETH Zürich lead on project no1s1, a self-owning house on the blockchain. The idea is derived from concept nature 2.0, crypto commons, etc. 
           The research aims at explore a new way of living where nature and the cyber-physical integrated built environment organized by DAO as CPR. She’s also a founding member of DAO Suisse,
@@ -183,7 +182,7 @@ const Team = (): JSX.Element => {
         <TeamMember
           name="Victoria Citterio-Soelle"
           title="Organisation Team"
-          title2="Founding Member @ FTW DAO"
+          title2="Founding Member FTW DAO"
           image={victoria}
           desc="Victoria is a policy and operations expert with 10+ years of international experience, working across all levels from the highest office in government to top executives of multinationals to
            social entrepreneurs launching their ventures. Throughout her career, she has been building bridges and alliances between the public and the private sector, the old and new economy, and the analog and 
@@ -194,22 +193,12 @@ const Team = (): JSX.Element => {
         <TeamMember
           name="Esteve Serra Clavera"
           title="Organisation Team"
-          title2="Contributor @ METAFACTORY / FTWDAO / NFTBERLIN / W3ST DAO"
+          title2="Contributor METAFACTORY/ FTWDAO/ NFTBERLIN/ W3ST DAO"
           image={esteve}
           desc="Advisor to W3st DAO, member of FTW DAO. Esteve is an experienced project manager and was part of the organising team of NFT Berlin. 
           He believes web3 has the potential to improve humankind current challenges massively onboarding non-web3 native and cross-relating physical and digital realities."
           linkedin="https://www.linkedin.com/in/esteveserraclavera/"
           twitter="https://twitter.com/nosoccomtothom"
-        />
-          <TeamMember
-          name="Dr. Mara Harvey"
-          title="Organisation Team"
-          title2="Founding Member @ FTW DAO"
-          image={mara}
-          desc="Dr. Mara Catherine Harvey. Mara is a senior leader in finance with over 20 years of experience, and is an active advocate for gender equality. She worked closely with billionaire families across Europe, and launched a transformation program to better serve female banking clients & advance inclusion. Her works catalysed over 1b USD of capital into investments supporting gender equality. She was an early financial contributor to FTW DAO, and is increasingly adopting web3, NFTs 
-          and crypto education into her work, helping parents prepare their children for their financial futures."
-          linkedin="https://www.linkedin.com/in/drmaraharvey/"  
-          twitter="https://twitter.com/DrMaraHarvey"
         />
       </div>
       <div className="w-[80vw] lg:w-[95.75vw] text-center bg-white p-6 mt-4 border-black border flex flex-col gap-4 mb-8 md:mb-16">
