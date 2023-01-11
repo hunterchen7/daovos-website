@@ -16,12 +16,17 @@ const Daovos = (): JSX.Element => {
         January 16th, 2023 1:00-4:00 PM
         </h3>
         <h1 className="font-nunito text-3xl">
+
+          <a href='https://goo.gl/maps/FAnJUnWt8auhj1Nx6' target="_blank" rel='noreferrer' className='hover:bg-yellowGreen duration-150 ease-in-out rounded-full'>
           CV Labs Networking Lounge
           <br/>
           Obere Strasse 33, Davos, Switzerland
+          </a>
+          
                    
         </h1>
         <div className="flex gap-3 mb-6">
+        
           <a href='https://twitter.com/daovosglobal' target="_blank" rel='noreferrer' className='hover:bg-yellowGreen duration-150 ease-in-out rounded-full'>
             <Image src={twitter} alt="twitter" className="hover:cursor-pointer" />
           </a>
@@ -32,7 +37,6 @@ const Daovos = (): JSX.Element => {
             <Image src={telegram} alt="telegram" className="hover:cursor-pointer" />
           </a>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3051.9673266669693!2d9.81805956536427!3d46.79352457314871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4784a401b552507f%3A0x28bc54714a86992b!2sOb.%20Str.%2033%2C%207270%20Davos%20Platz%2C%20Switzerland!5e0!3m2!1sen!2sde!4v1673368465594!5m2!1sen!2sde" width="600" height="450"   loading="lazy" ></iframe> 
       </div>
     </div>
   );
