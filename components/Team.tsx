@@ -99,6 +99,8 @@ const Team = (): JSX.Element => {
           <div className="relative max-w-[300px] max-h-[300px] rounded-full overflow-hidden z-0">
             <Image
               src={image}
+              width={300}
+              height={300}
               placeholder={'blur'}
               blurDataURL={blurData}
               alt={name}
@@ -135,7 +137,7 @@ const Team = (): JSX.Element => {
           name="Isla Munro"
           title="Organisation Team"
           title2="Founder FTW DAO | Contributor BANKLESS DAO/ EXPANSION DAO"
-          image={isla}
+          image="/team_members/isla.jpg"
           desc="​​Isla is the co-founder of FTW DAO, a social and venture DAO ecosystem with the goal of funding diverse founders globally. She was previously part of a seed 
           stage VC fund investing in CEE & Baltics and has worked in and around finance and impact for the past 10 years. She's passionate about innovating on financial models 
           and systems, and takes an interest in organisation design, mental health, future of work, in particular web3 models for impact. Isla is also an OG at Bankless DAO and Fight Club VC, 
@@ -148,7 +150,7 @@ const Team = (): JSX.Element => {
           name="Estefania Ochoa"
           title="Organisation Team"
           title2="Contributor HER DAO LATAM/ CABIN DAO/ INK DAO"
-          image={estefania}
+          image="/team_members/estefania.png"
           desc="Estefania has over 10+ years in community building and event planning. She began her blockchain journey in 2021 while working at bG gallery, and began onboarding artists to NFTs.
           Today she is able to use these skills as she facilitates developer experiences and programs. Estefanía Ochoa is an advocate for education and accessibility in the blockchain ecosystem. 
           She is fueled by her background in supporting underrepresented creators in the traditional markets and empowering them with new opportunities being provided by Blockchain technology. 
@@ -160,7 +162,7 @@ const Team = (): JSX.Element => {
           name="Daniel Dohne"
           title="Organisation Team"
           title2="Founder ARAMID LABS"
-          image={daniel}
+          image="/team_members/daniel.png"
           desc="Daniel has a background in software engineering and has experience in web2 and web3 startups in the DeFi, ReFi and DeSci space as well as big4 companies building 
           regulatory software used at 80% of Swiss private banks, and has been working in the crypto space since 2017. He’s a passionate web3 trader and investor in future oriented 
           technology and a co-founder at Aramid Labs, a collective of builders who have created an interoperability protocol between Algorand, other non-EVM and EVM networks. 
@@ -172,7 +174,7 @@ const Team = (): JSX.Element => {
           name="Dr. Hongyang (Una) Wang"
           title="Organisation Team"
           title2="Founding Member DAO SUISSE"
-          image={una}
+          image="/team_members/una.jpg"
           desc="Una is a PhD student at ETH Zürich lead on project no1s1, a self-owning house on the blockchain. The idea is derived from concept nature 2.0, crypto commons, etc. 
           The research aims at explore a new way of living where nature and the cyber-physical integrated built environment organized by DAO as CPR. She’s also a founding member of DAO Suisse,
            a non-profit organisation with the mission to promote and lobby for DAOs and DAO-friendly regulation in Switzerland. She personally also cares deeply about concepts such as DAO, UBI, UBC etc."
@@ -183,7 +185,7 @@ const Team = (): JSX.Element => {
           name="Victoria Citterio-Soelle"
           title="Organisation Team"
           title2="Founding Member FTW DAO"
-          image={victoria}
+          image="/team_members/victoria.jpeg"
           desc="Victoria is a policy and operations expert with 10+ years of international experience, working across all levels from the highest office in government to top executives of multinationals to
            social entrepreneurs launching their ventures. Throughout her career, she has been building bridges and alliances between the public and the private sector, the old and new economy, and the analog and 
            digital world. What drives her are the questions of 'what brings people together, what keeps them engaged and how to regulate the spaces where we interact'. Aside from working with teams, traditional organisations, and DAOs, on the questions above, she’s also redefining the role of ownership and legacy in the family business.
@@ -194,7 +196,7 @@ const Team = (): JSX.Element => {
           name="Esteve Serra Clavera"
           title="Organisation Team"
           title2="Contributor METAFACTORY/ FTWDAO/ NFTBERLIN/ W3ST DAO"
-          image={esteve}
+          image="/team_members/esteve.jpeg"
           desc="Advisor to W3st DAO, member of FTW DAO. Esteve is an experienced project manager and was part of the organising team of NFT Berlin. 
           He believes web3 has the potential to improve humankind current challenges massively onboarding non-web3 native and cross-relating physical and digital realities."
           linkedin="https://www.linkedin.com/in/esteveserraclavera/"

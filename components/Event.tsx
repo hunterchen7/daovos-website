@@ -1,6 +1,4 @@
 import React from "react";
-import BookYourSpot from "./BookYourSpot";
-import Image from "next/image";
 
 const Event = (): JSX.Element => {
   const Text = (props: any): JSX.Element => {

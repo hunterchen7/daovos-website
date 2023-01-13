@@ -1,6 +1,4 @@
 import React from "react";
-import BookYourSpot from "./BookYourSpot";
-import Image from "next/image";
 
 const Agenda = (): JSX.Element => {
   const Textbox = (props: any): JSX.Element => {
