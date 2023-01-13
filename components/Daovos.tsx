@@ -22,7 +22,12 @@ const Daovos = (): JSX.Element => {
           <br/>
           Obere Strasse 33, Davos, Switzerland
           </a>
-          
+          <br/>
+          <br/>
+          <b>Register for the event </b>
+          <a href='https://www.eventbrite.ch/e/daovoz-tickets-511821651337' target="_blank" rel='noreferrer' className='hover:bg-yellowGreen duration-150 ease-in-out rounded-full'>
+           <b>HERE</b>
+          </a>
                    
         </h1>
         <div className="flex gap-3 mb-6">
