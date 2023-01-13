@@ -28,60 +28,60 @@ const Agenda = (): JSX.Element => {
       <div className="text-6xl lg:text-8xl font-bold text-center bg-[#E2FF8A] mt-12 py-12">
         AGENDA
       </div>
-      <ul className="list-none text-3xl font-nunito my-8 w-1/2 mx-auto space-y-4">
-        <li>
+      <ul className="list-none text-2xl font-nunito my-8 w-1/2 mx-auto space-y-4 border border-black rounded-2xl bg-[#E2FF8A]">
+        <li className="px-5 pb-2 pt-5">
           1:00 - 1:15 pm <br/><b>Open doors</b> <br/>
         </li>
-        <li>
-          1:15 - 1:30 pm <br/><b>Welcome Address and Introductions</b> <br/>
+        <li className="bg-white px-5 py-2">
+          1:15 - 1:30 pm <br/><b>Welcome Address and Introductions</b>
         </li>
-        <li>
+        <li className="px-5 py-2">
           1:30 - 2:00 pm <br/><b>Web3&apos;s climate impact: can it help us get to net zero?</b>
           <p>Speakers from</p>
           <ul className="list-disc text-2xl mx-12">
-            <li>Foresight Institute</li>
-            <li>Crypto Commons Association</li>
-            <li>Hyphen Earth</li>
-            <p>Moderated by Tien Ma (Redhill)</p> <br/>
+            <li className="font-semibold">Foresight Institute</li>
+            <li className="font-semibold">Crypto Commons Association</li>
+            <li className="font-semibold">Hyphen Earth</li>
+            <p className="font-semibold">Moderated by Tien Ma (Redhill)</p>
           </ul>
         </li>
-        <li>        
+        <li className="bg-white px-5 py-2">        
           2:05 - 2:35 pm <br/><b>From theory to practice: governance learnings for the next wave of DAOs</b>
           <p>Speakers from</p>
           <ul className="list-disc text-2xl mx-12">
-            <li>Maker DAO</li>
-            <li>Palmera</li>
-            <li>Bankless DAO</li>
-            <li>Anne-Grace Kleczewski</li> <br/>
+            <li className="font-semibold">Maker DAO</li>
+            <li className="font-semibold">Palmera</li>
+            <li className="font-semibold">Bankless DAO</li>
+            <li className="font-semibold">Anne-Grace Kleczewski</li>
+            <p>Moderated by Victoria (FTW DAO)</p>
           </ul>
-          <p>moderated by Victoria (FTW DAO)</p>
         </li>
-        <li>
+        <li className="px-5 py-2">
           2:30 - 3:00 pm <br/><b>Learning Circle: Investing in DAOs</b>
           <p>Speakers from</p>
           <ul className="list-disc text-2xl mx-12">
-            <li>Tokentus</li>
-            <li>1kx</li>
-            <li>Smape Capital</li>
-            <li>Fabio Moura</li>
+            <li className="font-semibold">Tokentus</li>
+            <li className="font-semibold">1kx</li>
+            <li className="font-semibold">Smape Capital</li>
+            <li className="font-semibold">Fabio Moura</li>
+            <p>Moderated by Mona (Tokentus)</p>
           </ul>
-          <p>moderated by Mona (Tokentus)</p> <br/>
         </li>
-        <li>
+        <li className="bg-white px-5 py-2">
           3:10 pm <b>DAO Suisse Introduction</b> <br/>
         </li>
-        <li>
+        <li className="px-5 py-2">
           3:20 pm <b>DAOVOZ Community Invitation</b> <br/>
         </li>
-        <li>
+        <li className="bg-white px-5 py-2">
           3:30 - 3:50 pm <br/><b>Legal Q&A for those with questions on DAOs</b>
           <p>Speakers</p>
           <ul className="list-disc text-2xl mx-12">
-            <li>Fabio Moura</li>
-            <li>Anne-Grace Kleczewski</li><br/>
+            <li className="font-semibold">Fabio Moura</li>
+            <li className="font-semibold">Anne-Grace Kleczewski</li>
           </ul>
         </li>
-        <li>
+        <li className="px-5 pt-2 pb-5">
           3:40 - 4:30 pm <br/><b>Networking Lounge and drinks</b>
         </li>
       </ul>

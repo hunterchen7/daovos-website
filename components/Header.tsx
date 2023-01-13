@@ -54,8 +54,8 @@ const Header = (): JSX.Element => {
         <HeaderButton to="mission" text="Mission" />
         {/*<HeaderButton to="event" text="Event"/>
         <HeaderButton to="tickets" text="Tickets" />*/}
-        <HeaderButton to="team" text="Team" />
         <HeaderButton to="philosophy" text="Philosophy" />
+        <HeaderButton to="team" text="Team" />
       </div>
       <div
         className={`z-2 text-right gap-4 py-4 px-8 absolute top-20 right-2 flex flex-col text-md font-medium bg-background-secondary backdrop-blur-lg border-2 rounded-3xl w-full ${
@@ -68,8 +68,8 @@ const Header = (): JSX.Element => {
         <HeaderButton to="mission" text="Mission" />
         {/*<HeaderButton to="event" text="Event"/>
         <HeaderButton to="tickets" text="Tickets" />*/}
-        <HeaderButton to="team" text="Team" />
         <HeaderButton to="philosophy" text="Philosophy" />
+        <HeaderButton to="team" text="Team" />
       </div>
       {/*<div className="hidden lg:flex">
         <BookYourSpot />
