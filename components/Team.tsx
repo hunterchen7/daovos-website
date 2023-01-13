@@ -53,58 +53,13 @@ const Team = (): JSX.Element => {
     );
   }
 
-  const TeamMemberwIimage = (props: any): JSX.Element => {
-    const { name, title, image, desc, title2, twitter, github, linkedin, website } = props;
-    return (
-      <div className="flex flex-col justify-start bg-white border border-black my-3 md:mx-3 py-2 h-full">
-        <div className="flex justify-center mx-14 md:mx-24 lg:mx-36 my-6 bg-black rounded-full">
-          <div className="relative w-full h-full rounded-full overflow-hidden z-0">
-            <Image
-              src={image}
-              objectFit={'cover'}
-              layout={'responsive'}
-              placeholder={'blur'}
-              blurDataURL={blurData}
-              alt={name}
-            />
-          </div>
-        </div>
-        <div className="text-center text-3xl font-bold">
-          {name}
-        </div>
-        <div className="flex justify-center m-2 flex-row gap-2 items-center">
-          <Link link={twitter} icon={faTwitter} />
-          <Link link={github} icon={faGithub} />
-          <Link link={linkedin} icon={faLinkedin} />
-          <Link link={website} icon={faGlobeAmericas} />
-        </div>
-        <div className="text-center font-nunito text-xl my-2">
-          {title}
-        </div>
-        <div className="text-center font-nunito text-xl my-2">
-          {title2}
-        </div>
-        <div className="text-center font-nunito m-4 md:mx-8">
-          {desc}
-        </div>
-      </div>
-    );
-  };
-
   const TeamMember = (props: any): JSX.Element => {
     const { name, title, image, desc, title2, twitter, github, linkedin, website } = props;
     return (
       <div className="flex flex-col justify-start bg-white border border-black my-3 md:mx-3 py-2 h-full">
         <div className="flex justify-center self-center mx-14 md:mx-24 lg:mx-36 my-6 bg-black rounded-full max-w-[300px] max-h-[300px]">
-          <div className="relative max-w-[300px] max-h-[300px] rounded-full overflow-hidden z-0">
-            <Image
-              src={image}
-              width={300}
-              height={300}
-              placeholder={'blur'}
-              blurDataURL={blurData}
-              alt={name}
-            />
+          <div className="relative max-w-[300px] max-h-[300px] min-w-[100px] min-h-[100px] rounded-full overflow-hidden z-0">
+            <img src={image} alt={name} />
           </div>
         </div>
         <div className="text-center text-3xl font-bold">
