@@ -26,7 +26,7 @@ const Agenda = (): JSX.Element => {
       <div className="text-6xl lg:text-8xl font-bold text-center bg-[#E2FF8A] mt-12 py-12">
         AGENDA
       </div>
-      <ul className="list-none text-2xl font-nunito my-8 w-1/2 mx-auto space-y-4 border border-black rounded-2xl bg-[#E2FF8A]">
+      <ul className="list-none text-2xl font-nunito my-8 w-full md:w-2/3 lg:w-1/2 mx-auto space-y-4 border border-black rounded-2xl bg-[#E2FF8A]">
         <li className="px-5 pb-2 pt-5">
           1:00 - 1:15 pm <br/><b>Open doors</b> <br/>
         </li>
