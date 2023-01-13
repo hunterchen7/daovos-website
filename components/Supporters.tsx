@@ -18,7 +18,7 @@ const Supporters = (): JSX.Element => {
         <Supporter image={'/org_logos/ftwdao.svg'} />
         <Supporter title="DAO SUISSE" />
         <div className="px-5 border-x border-black flex flex-col justify-center">
-          <img src='/org_logos/aramid.png' alt={'Aramid'} className="max-h-[150px] min-w-[250px] bg-[#2F005E] rounded-full px-6 py-3"/>
+          <img src='/org_logos/aramid.png' alt={'Aramid'} className="max-h-[150px] min-w-[250px] bg-[#2F005E] rounded-full pl-6 pr-8 py-3"/>
         </div>
         <Supporter image="/org_logos/NGV.png" />
         <Supporter title="BANKLESS DAO" />
