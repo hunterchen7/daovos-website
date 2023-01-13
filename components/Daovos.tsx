@@ -6,7 +6,7 @@ import telegram from '../public/telegram.svg';
 
 const Daovos = (): JSX.Element => {
   return (
-    <div className="flex flex-col md:flex-row justify-around w-full h-screen border-b-2 border-black gap-3 my-8" id="daovos">
+    <div className="flex flex-col md:flex-row justify-around w-full min-h-screen border-b-2 border-black gap-3 my-8" id="daovos">
       <Image src={daovos_icon} alt="daovos_icon" className="md:scale-125"/>
       <div className="flex flex-col gap-3 justify-center">
         <h1 className="font-semibold text-8xl">
@@ -25,10 +25,9 @@ const Daovos = (): JSX.Element => {
           <br/>
           <br/>
           <b>Register for the event </b>
-          <a href='https://www.eventbrite.ch/e/daovoz-tickets-511821651337' target="_blank" rel='noreferrer' className='hover:bg-yellowGreen duration-150 ease-in-out rounded-full'>
+          <a href='https://www.eventbrite.ch/e/daovoz-tickets-511821651337' target="_blank" rel='noreferrer' className='hover:bg-yellowGreen duration-150 ease-in-out rounded-3xl px-1 -ml-1 text-blue-600'>
            <b>HERE</b>
           </a>
-                   
         </h1>
         <div className="flex gap-3 mb-6">
         
