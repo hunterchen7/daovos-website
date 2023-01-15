@@ -1,8 +1,8 @@
 const Daovos2 = (): JSX.Element => {
   return (
-    <div className="flex flex-col justify-evenly w-full h-screen border-y-2 border-black" id="daovos">
-      <div className="justify-center md:w-1/2 lg:w-1/3 text-4xl self-center font-semibold">
-        The DAOVOS collective is a DAO of DAOs, on a mission to bring positive change to society and our environment by surfacing and amplifying the most suitable and impactful voices and ideas in the web3 space.
+    <div className="flex flex-col justify-evenly w-full md:h-screen border-y-2 border-black" id="daovos">
+      <div className="justify-center md:w-1/2 lg:w-1/2 leading-8 md:leading-[80px] md:text-4xl self-center my-12 md:my-0">
+        The Daovoz collective is a <span className="font-bold bg-yellowGreen">DAO of DAOs</span>, on a mission to <span className="font-bold bg-yellowGreen">bring positive change to society</span> and our environment by <span className="font-bold bg-yellowGreen">surfacing</span> and <span className="font-bold bg-yellowGreen">amplifying</span> the most suitable and <span className="font-bold bg-yellowGreen">impactful voices and ideas</span> in the web3 space.
       </div>
     </div>
   );

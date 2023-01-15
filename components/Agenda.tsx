@@ -1,6 +1,4 @@
 import React from "react";
-import BookYourSpot from "./BookYourSpot";
-import Image from "next/image";
 
 const Agenda = (): JSX.Element => {
   const Textbox = (props: any): JSX.Element => {
@@ -10,10 +8,10 @@ const Agenda = (): JSX.Element => {
         {
           number % 2 === 0 && <div className="w-[80px] lg:w-[140px]" />
         }
-        <div className="w-[80px] lg:w-[140px] h-[100px] lg:h-[185px] border-2 border-black text-center flex flex-col justify-center text-3xl md:text-6xl lg:text-9xl font-extrabold">
+        <div className="w-[80px] lg:w-[140px] h-[100px] lg:h-[185px] border-2 border-black text-center flex flex-col justify-center text-3xl md:text-6xl font-extrabold">
           {number}
         </div>
-        <div className="border-r-2 border-y-2 border-black text-center rounded-r-full flex flex-col justify-center text-xl lg:text-4xl font-bold px-4 md:px-20 lg:px-36 bg-white">
+        <div className="border-r-2 border-y-2 border-black text-center rounded-r-full flex flex-col justify-center text-xl lg:text-3xl font-bold px-4 md:px-20 lg:px-36 bg-white">
           {text}
         </div>
       </div>
@@ -21,52 +19,71 @@ const Agenda = (): JSX.Element => {
   }
 
   return (
-    <div className="w-[95vw] mt-8" id="agenda">
-      <div className="text-6xl bg-[url('../public/AGENDA.svg')] text-center lg:py-8 mb-8" />
+    <div className="mt-8" id="agenda">
+      <div className="hidden lg:flex border-t-2 border-black pb-4"/>
+      <div className="bg-[url('../public/AGENDA.svg')] text-center lg:py-8 mb-3 scale-75 -mx-96" />
       <div className="hidden lg:flex border-t-2 border-black"/>
-      <div className="text-6xl lg:text-[200px] font-bold text-center bg-[#E2FF8A] mt-12 py-12">
+      <div className="text-6xl lg:text-8xl font-bold text-center bg-[#E2FF8A] mt-12 py-12">
         AGENDA
       </div>
-      <div className="items-center">
-        <div className="text-5xl self-center text-center my-8">
-          Catalyzing the DAOVOS mission and community
-        </div>
-        <div className="flex flex-col justify-center text-center self-center items-center text-2xl pb-32 lg:pb-80 bg-[url('../public/BALL.svg')] border-b-2 border-black">
-          <p>Workshops on the DAOVOS DAO mission and governance DAOversity; Diversity, inclusion, equity and accessibility</p>
-          <br/>
-          <p>DAO governance, legal structures and taxation</p>
-          <br/>
-          <p>Onboarding the next billion DAO members</p>
-          <br/>
-          <p>Network states and the future of Communities</p>
-          <br/>
-          <p>Identity, transhumanism and ethics</p>
-          <br/>
-          <p>Regenerative finance</p>
-          <br/>
-          <BookYourSpot />
-        </div>
-      </div>
-      <div className="flex justify-center m-12">
-        <Image src="/2030.svg" alt="OURPLAN" width={700} height={700}/>
-      </div>
-      <div className="self-center text-4xl font-nunito">
-        FIVE KEY STREAMS FOR <span className="font-extrabold">DAOVOS</span> DISCUSSION
-      </div>
-      <div className="flex flex-col self-center w-[95.7vw] gap-4 p-10 bg-[url('../public/plan_bg.svg')] bg-cover bg-no-repeat">
-        <div className="flex flex-col self-center gap-4">
-          <Textbox number={1} text={'Work and Education'} />
-          <Textbox number={2} text={'Health, Wellness & Longevity'} />
-          <Textbox number={3} text={'Finance & Financial Systems'} />
-          <Textbox number={4} text={'Media, Creators & Communities'} />
-          <Textbox number={5} text={'Sustainable Living & Ecosystems'} />          
-        </div>
-        <div className="md:w-1/2 self-center text-xl font-nunito my-12">
-          The DAOVOS community is deeply committed to the principles of diversity, inclusion, transparency, privacy and decentralisation, and these values will be reflected in our conversations and our actions as a collective. See here for the 2023 draft agenda.
-        </div>        
-      </div>
+      <ul className="list-none text-2xl font-nunito my-8 w-full md:w-2/3 lg:w-1/2 mx-auto space-y-4 border border-black rounded-2xl bg-[#E2FF8A]">
+        <li className="px-5 pb-2 pt-5">
+          1:00 - 1:15 pm <br/><b>Open doors</b> <br/>
+        </li>
+        <li className="bg-white px-5 py-2">
+          1:15 - 1:30 pm <br/><b>Welcome Address and Introductions</b>
+        </li>
+        <li className="px-5 py-2">
+          1:30 - 2:00 pm <br/><b>Web3&apos;s climate impact: can it help us get to net zero?</b>
+          <p>Speakers from</p>
+          <ul className="list-disc text-2xl mx-12">
+            <li className="font-semibold">Foresight Institute</li>
+            <li className="font-semibold">Crypto Commons Association</li>
+            <li className="font-semibold">Hyphen Earth</li>
+            <p className="font-semibold">Moderated by Tien Ma (Redhill)</p>
+          </ul>
+        </li>
+        <li className="bg-white px-5 py-2">        
+          2:05 - 2:35 pm <br/><b>From theory to practice: governance learnings for the next wave of DAOs</b>
+          <p>Speakers from</p>
+          <ul className="list-disc text-2xl mx-12">
+            <li className="font-semibold">Maker DAO</li>
+            <li className="font-semibold">Palmera</li>
+            <li className="font-semibold">Bankless DAO</li>
+            <li className="font-semibold">Anne-Grace Kleczewski</li>
+            <p>Moderated by Victoria (FTW DAO)</p>
+          </ul>
+        </li>
+        <li className="px-5 py-2">
+          2:30 - 3:00 pm <br/><b>Learning Circle: Investing in DAOs</b>
+          <p>Speakers from</p>
+          <ul className="list-disc text-2xl mx-12">
+            <li className="font-semibold">Tokentus</li>
+            <li className="font-semibold">1kx</li>
+            <li className="font-semibold">Smape Capital</li>
+            <li className="font-semibold">Fabio Moura</li>
+            <p>Moderated by Mona (Tokentus)</p>
+          </ul>
+        </li>
+        <li className="bg-white px-5 py-2">
+          3:10 pm <b>DAO Suisse Introduction</b> <br/>
+        </li>
+        <li className="px-5 py-2">
+          3:20 pm <b>DAOVOZ Community Invitation</b> <br/>
+        </li>
+        <li className="bg-white px-5 py-2">
+          3:30 - 3:50 pm <br/><b>Legal Q&A for those with questions on DAOs</b>
+          <p>Speakers</p>
+          <ul className="list-disc text-2xl mx-12">
+            <li className="font-semibold">Fabio Moura</li>
+            <li className="font-semibold">Anne-Grace Kleczewski</li>
+          </ul>
+        </li>
+        <li className="px-5 pt-2 pb-5">
+          3:40 - 4:30 pm <br/><b>Networking Lounge and drinks</b>
+        </li>
+      </ul>
     </div>
-    
   )
 };
 
